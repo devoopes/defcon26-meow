@@ -16,7 +16,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.1 r15371"
-   sodipodi:docname="meow_v1.svg">
+   sodipodi:docname="meow_v1.svg"
+   inkscape:export-filename="C:\Users\dash\Documents\GitHub\defcon26-meow\art\meow_v1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2">
     <linearGradient
@@ -35,13 +38,13 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1971895"
-     inkscape:cx="348.95447"
-     inkscape:cy="887.88905"
+     inkscape:zoom="12.429181"
+     inkscape:cx="337.70537"
+     inkscape:cy="939.06022"
      inkscape:document-units="cm"
-     inkscape:current-layer="layer12"
+     inkscape:current-layer="layer15"
      showgrid="false"
-     showguides="true"
+     showguides="false"
      inkscape:guide-bbox="true"
      inkscape:pagecheckerboard="true"
      inkscape:lockguides="false"
@@ -242,7 +245,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer14"
-     inkscape:label="Body">
+     inkscape:label="Body"
+     sodipodi:insensitive="true">
     <g
        inkscape:groupmode="layer"
        id="layer12"
@@ -415,7 +419,7 @@
        inkscape:groupmode="layer"
        id="layer5"
        inkscape:label="Eyes"
-       sodipodi:insensitive="true">
+       style="display:inline">
       <path
          style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 88.026276,47.07038 v 7.82724 h 5.900531 v -7.82724 z"
@@ -427,5 +431,9 @@
          id="path4609"
          inkscape:connector-curvature="0" />
     </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer15"
+       inkscape:label="Eyebrows" />
   </g>
 </svg>
