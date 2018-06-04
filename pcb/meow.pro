@@ -1,4 +1,4 @@
-update=5/25/2018 11:47:04 AM
+update=Friday, June 01, 2018 'PMt' 10:51:37 PM
 version=1
 last_client=kicad
 [general]
@@ -29,7 +29,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=../../kicad-ESP8266
+LibDir=libraries
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,3 +61,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=ESP8266
+LibName31=libraries/PSC08-12EWA
+LibName32=/Library/Application Support/kicad/modules/kicad-symbols/Switch
+LibName33=/Library/Application Support/kicad/modules/eurocad/eurocad
