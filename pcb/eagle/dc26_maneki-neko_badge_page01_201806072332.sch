@@ -142,75 +142,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="esp8266modules">
-<packages>
-<package name="ESP01">
-<description>ESP8266 Module 01</description>
-<pad name="GND" x="-3.825" y="-5.6375" drill="0.8" shape="square" rot="R270"/>
-<pad name="RX" x="3.795" y="-5.6375" drill="0.8" shape="square" rot="R270"/>
-<pad name="GPIO2" x="-1.285" y="-5.6375" drill="0.8" rot="R270"/>
-<pad name="GPIO0" x="1.255" y="-5.6375" drill="0.8" rot="R270"/>
-<pad name="RST" x="1.255" y="-8.1775" drill="0.8" rot="R270"/>
-<pad name="CH_PD" x="-1.285" y="-8.1775" drill="0.8" rot="R270"/>
-<pad name="TX" x="-3.825" y="-8.1775" drill="0.8" rot="R270"/>
-<pad name="VCC" x="3.795" y="-8.1775" drill="0.8" rot="R270"/>
-<wire x1="-7" y1="15" x2="-7" y2="7.38" width="0.127" layer="21"/>
-<wire x1="-7" y1="7.38" x2="-7" y2="-9.765" width="0.127" layer="21"/>
-<wire x1="-7" y1="-9.765" x2="7.2875" y2="-9.765" width="0.127" layer="21"/>
-<wire x1="7.2875" y1="-9.765" x2="7.2875" y2="7.38" width="0.127" layer="21"/>
-<wire x1="7.2875" y1="7.38" x2="7.2875" y2="15" width="0.127" layer="21"/>
-<wire x1="7.2875" y1="15" x2="-7" y2="15" width="0.127" layer="21"/>
-<wire x1="-7" y1="7.38" x2="7.2875" y2="7.38" width="0.127" layer="21"/>
-<text x="-5.73" y="9.92" size="2.54" layer="21">ESP-01</text>
-<text x="-7" y="16" size="1.27" layer="25">&gt;Name</text>
-<text x="-7" y="-11" size="1.27" layer="27">&gt;Value</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ESP01">
-<description>ESP8266 Wifi module 01</description>
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-2.54" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
-<pin name="GND" x="-17.78" y="7.62" visible="pin" length="middle"/>
-<pin name="GPIO2" x="-17.78" y="5.08" visible="pin" length="middle"/>
-<pin name="GPIO0" x="-17.78" y="2.54" visible="pin" length="middle"/>
-<pin name="RXD" x="-17.78" y="0" visible="pin" length="middle"/>
-<pin name="TXD" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
-<pin name="CH_PD" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
-<pin name="RST" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
-<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.7" y="-5.08" size="1.778" layer="95">&gt;Value</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ESP01">
-<description>ESP8266 Wifi module 01</description>
-<gates>
-<gate name="G$1" symbol="ESP01" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ESP01">
-<connects>
-<connect gate="G$1" pin="CH_PD" pad="CH_PD"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="GPIO0" pad="GPIO0"/>
-<connect gate="G$1" pin="GPIO2" pad="GPIO2"/>
-<connect gate="G$1" pin="RST" pad="RST"/>
-<connect gate="G$1" pin="RXD" pad="RX"/>
-<connect gate="G$1" pin="TXD" pad="TX"/>
-<connect gate="G$1" pin="VCC" pad="VCC"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="micro-stm_v3">
 <description>&lt;b&gt;ARM 32-bit Cortex™ MCUs&lt;/b&gt;&lt;p&gt;
 
@@ -8804,181 +8735,115 @@ http://www.zetex.com&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="con-samtec" urn="urn:adsk.eagle:library:184">
-<description>&lt;b&gt;Samtec Connectors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<library name="dc26-shitty-addon">
 <packages>
-<package name="TSW-102-XX-G-D" library_version="2">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
-Source: Samtec TSW.pdf</description>
-<wire x1="-2.669" y1="2.425" x2="2.669" y2="2.425" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="2.425" x2="2.669" y2="-2.425" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-2.425" x2="-2.669" y2="-2.425" width="0.2032" layer="21"/>
-<wire x1="-2.669" y1="-2.425" x2="-2.669" y2="2.425" width="0.2032" layer="21"/>
-<pad name="1" x="1.27" y="-1.27" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="2" x="1.27" y="1.27" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="3" x="-1.27" y="-1.27" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="4" x="-1.27" y="1.27" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<text x="1.062" y="-3.818" size="1.1" layer="21" font="vector" rot="SR0">1</text>
-<text x="0.887" y="2.744" size="1.1" layer="21" font="vector" rot="SR0">2</text>
-<text x="-3.175" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.62" y1="-1.62" x2="-0.92" y2="-0.92" layer="51"/>
-<rectangle x1="-1.62" y1="0.92" x2="-0.92" y2="1.62" layer="51"/>
-<rectangle x1="0.92" y1="-1.62" x2="1.62" y2="-0.92" layer="51"/>
-<rectangle x1="0.92" y1="0.92" x2="1.62" y2="1.62" layer="51"/>
-</package>
-<package name="TSW-102-08-G-D-RA" library_version="2">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
-Source: Samtec TSW.pdf</description>
-<wire x1="-2.669" y1="-2.046" x2="2.669" y2="-2.046" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-2.046" x2="2.669" y2="-0.106" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-0.106" x2="-2.669" y2="-0.106" width="0.2032" layer="21"/>
-<wire x1="-2.669" y1="-0.106" x2="-2.669" y2="-2.046" width="0.2032" layer="21"/>
-<pad name="1" x="1.27" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="2" x="1.27" y="4.064" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="3" x="-1.27" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="4" x="-1.27" y="4.064" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<text x="-3.175" y="-7.62" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-7.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<text x="2.555" y="0.775" size="1.1" layer="21" font="vector" rot="SR0">1</text>
-<text x="2.52" y="3.29" size="1.1" layer="21" font="vector" rot="SR0">2</text>
-<rectangle x1="-1.524" y1="0" x2="-1.016" y2="4.318" layer="51"/>
-<rectangle x1="1.016" y1="0" x2="1.524" y2="4.318" layer="51"/>
-<rectangle x1="-1.524" y1="-7.89" x2="-1.016" y2="-2.04" layer="21"/>
-<rectangle x1="1.016" y1="-7.89" x2="1.524" y2="-2.04" layer="21"/>
-</package>
-<package name="TSW-102-XX-G-Q" library_version="2">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
-Source: Samtec TSW.pdf</description>
-<wire x1="-2.669" y1="3.695" x2="2.669" y2="3.695" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="3.695" x2="2.669" y2="-3.695" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-3.695" x2="-2.669" y2="-3.695" width="0.2032" layer="21"/>
-<wire x1="-2.669" y1="-3.695" x2="-2.669" y2="3.695" width="0.2032" layer="21"/>
-<pad name="1" x="1.27" y="-2.54" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="2" x="1.27" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="3" x="-1.27" y="-2.54" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="4" x="-1.27" y="2.54" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<text x="1.112" y="-5.138" size="1.1" layer="21" font="vector" rot="SR0">1</text>
-<text x="1.012" y="3.989" size="1.1" layer="21" font="vector" rot="SR0">2</text>
-<text x="-3.175" y="-3.81" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.62" y1="-2.89" x2="-0.92" y2="-2.19" layer="51"/>
-<rectangle x1="-1.62" y1="2.19" x2="-0.92" y2="2.89" layer="51"/>
-<rectangle x1="0.92" y1="-2.89" x2="1.62" y2="-2.19" layer="51"/>
-<rectangle x1="0.92" y1="2.19" x2="1.62" y2="2.89" layer="51"/>
-</package>
-<package name="TSW-102-08-G-Q-RA" library_version="2">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
-Source: Samtec TSW.pdf</description>
-<wire x1="-2.669" y1="-2.046" x2="2.669" y2="-2.046" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-2.046" x2="2.669" y2="-0.106" width="0.2032" layer="21"/>
-<wire x1="2.669" y1="-0.106" x2="-2.669" y2="-0.106" width="0.2032" layer="21"/>
-<wire x1="-2.669" y1="-0.106" x2="-2.669" y2="-2.046" width="0.2032" layer="21"/>
-<pad name="1" x="1.27" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="2" x="1.27" y="6.604" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="3" x="-1.27" y="1.524" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<pad name="4" x="-1.27" y="6.604" drill="1" diameter="1.5" shape="octagon" rot="R180"/>
-<text x="2.63" y="1.1" size="1.1" layer="21" font="vector" rot="SR0">1</text>
-<text x="2.57" y="6.165" size="1.1" layer="21" font="vector" rot="SR0">2</text>
-<text x="-3.175" y="-7.62" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="4.445" y="-7.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.524" y1="0" x2="-1.016" y2="6.858" layer="51"/>
-<rectangle x1="1.016" y1="0" x2="1.524" y2="6.858" layer="51"/>
-<rectangle x1="-1.524" y1="-7.89" x2="-1.016" y2="-2.04" layer="21"/>
-<rectangle x1="1.016" y1="-7.89" x2="1.524" y2="-2.04" layer="21"/>
+<package name="2X2-0.1INCH-FEMALE-SMT">
+<smd name="GND" x="0" y="0" dx="1.85" dy="1" layer="1" rot="R90"/>
+<smd name="SCL" x="2.54" y="0" dx="1.85" dy="1" layer="1" rot="R90"/>
+<smd name="VCC" x="0" y="5.65" dx="1.85" dy="1" layer="1" rot="R90"/>
+<smd name="SDA" x="2.54" y="5.65" dx="1.85" dy="1" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
-<symbol name="MPINV" library_version="2">
-<text x="-1.27" y="1.27" size="1.778" layer="96">&gt;VALUE</text>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<rectangle x1="0" y1="-0.254" x2="1.778" y2="0.254" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-<symbol name="MPIN" library_version="2">
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<rectangle x1="0" y1="-0.254" x2="1.778" y2="0.254" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<symbol name="DC26-SHITTY-ADDON-HEADER">
+<pin name="GND" x="-5.08" y="0" length="middle"/>
+<pin name="VCC" x="-5.08" y="2.54" length="middle"/>
+<pin name="SDA" x="20.32" y="2.54" length="middle" rot="R180"/>
+<pin name="SCK" x="20.32" y="0" length="middle" rot="R180"/>
+<wire x1="0" y1="5.08" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="15.24" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-2.54" x2="15.24" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="-10.16" size="1.778" layer="97">DC26 SHITTY ADDON 
+FEMALE SMT</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TSW-102-*-G" prefix="X" library_version="2">
-<description>&lt;b&gt;THROUGH-HOLE .025" SQ POST HEADER&lt;/b&gt;&lt;p&gt;
-Source: Samtec TSW.pdf</description>
+<deviceset name="SHITTY-ADDON-HEADER-MASTER">
 <gates>
-<gate name="-1" symbol="MPINV" x="-7.62" y="0" addlevel="always"/>
-<gate name="-2" symbol="MPIN" x="10.16" y="0" addlevel="always"/>
-<gate name="-3" symbol="MPIN" x="-7.62" y="-2.54" addlevel="always"/>
-<gate name="-4" symbol="MPIN" x="10.16" y="-2.54" addlevel="always"/>
+<gate name="G$1" symbol="DC26-SHITTY-ADDON-HEADER" x="-7.62" y="0"/>
 </gates>
 <devices>
-<device name="-D" package="TSW-102-XX-G-D">
+<device name="" package="2X2-0.1INCH-FEMALE-SMT">
 <connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SCK" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
-<technology name="07">
-<attribute name="MF" value="Samtec Inc." constant="no"/>
-<attribute name="MPN" value="TSW-102-07-G-D" constant="no"/>
-<attribute name="OC_FARNELL" value="" constant="no"/>
-<attribute name="OC_NEWARK" value="" constant="no"/>
-</technology>
-<technology name="08">
-<attribute name="MF" value="Samtec Inc." constant="no"/>
-<attribute name="MPN" value="TSW-102-07-G-D" constant="no"/>
-<attribute name="OC_FARNELL" value="" constant="no"/>
-<attribute name="OC_NEWARK" value="" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
-<device name="-D-RA" package="TSW-102-08-G-D-RA">
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="NPTC042KFMS-RC">
+<packages>
+<package name="NPTC042KFMS-RC">
+<smd name="1" x="0" y="0" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<smd name="2" x="0" y="5.8166" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="0" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<smd name="4" x="2.54" y="5.8166" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<smd name="5" x="5.08" y="0" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<smd name="6" x="5.08" y="5.8166" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<smd name="7" x="7.62" y="0" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<smd name="8" x="7.62" y="5.8166" dx="1.5494" dy="0.9906" layer="1" rot="R90"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.27" x2="8.89" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="-1.27" x2="8.89" y2="6.985" width="0.1524" layer="21"/>
+<wire x1="8.89" y1="6.985" x2="-1.27" y2="6.985" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.905" x2="0.635" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.905" x2="0" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.27" x2="-0.635" y2="-1.905" width="0.1524" layer="21"/>
+<text x="-0.381" y="1.016" size="0.8128" layer="21">1</text>
+<text x="-0.254" y="4.064" size="0.8128" layer="21">2</text>
+<text x="7.366" y="0.889" size="0.8128" layer="21">7</text>
+<text x="7.366" y="4.191" size="0.8128" layer="21">8</text>
+</package>
+</packages>
+<symbols>
+<symbol name="ESP01">
+<description>ESP8266 Wifi module 01</description>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-2.54" x2="10.16" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="10.16" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<pin name="GND" x="-17.78" y="7.62" visible="pin" length="middle"/>
+<pin name="GPIO2" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="GPIO0" x="-17.78" y="2.54" visible="pin" length="middle"/>
+<pin name="RXD" x="-17.78" y="0" visible="pin" length="middle"/>
+<pin name="TXD" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="CH_PD" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="RST" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="VCC" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<text x="-12.7" y="10.16" size="1.778" layer="95">&gt;Name</text>
+<text x="-12.7" y="-5.08" size="1.778" layer="95">&gt;Value</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NPTC042KFMS-RC">
+<gates>
+<gate name="G$1" symbol="ESP01" x="2.54" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="NPTC042KFMS-RC">
 <connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
+<connect gate="G$1" pin="CH_PD" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GPIO0" pad="6"/>
+<connect gate="G$1" pin="GPIO2" pad="4"/>
+<connect gate="G$1" pin="RST" pad="5"/>
+<connect gate="G$1" pin="RXD" pad="8"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="7"/>
 </connects>
 <technologies>
-<technology name="08">
-<attribute name="MF" value="Samtec Inc." constant="no"/>
-<attribute name="MPN" value="TSW-102-08-G-D-RA" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-Q" package="TSW-102-XX-G-Q">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-</connects>
-<technologies>
-<technology name="07">
-<attribute name="MF" value="Samtec Inc." constant="no"/>
-<attribute name="MPN" value="TSW-102-07-G-Q" constant="no"/>
-</technology>
-<technology name="08">
-<attribute name="MF" value="Samtec Inc." constant="no"/>
-<attribute name="MPN" value="TSW-102-07-G-Q" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-Q-RA" package="TSW-102-08-G-Q-RA">
-<connects>
-<connect gate="-1" pin="1" pad="1"/>
-<connect gate="-2" pin="1" pad="2"/>
-<connect gate="-3" pin="1" pad="3"/>
-<connect gate="-4" pin="1" pad="4"/>
-</connects>
-<technologies>
-<technology name="08">
-<attribute name="MF" value="Samtec Inc." constant="no"/>
-<attribute name="MPN" value="TSW-102-08-G-Q-RA" constant="no"/>
-</technology>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8995,7 +8860,6 @@ Source: Samtec TSW.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U3" library="esp8266modules" deviceset="ESP01" device=""/>
 <part name="U1" library="micro-stm_v3" deviceset="STM32F030C*T" device="" technology="8"/>
 <part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -9062,10 +8926,11 @@ Source: Samtec TSW.pdf</description>
 <part name="R27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k/5%"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF/16V/X7R"/>
 <part name="SUPPLY17" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="H3" library="con-samtec" library_urn="urn:adsk.eagle:library:184" deviceset="TSW-102-*-G" device="-D" technology="07"/>
 <part name="R29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="NO POP"/>
 <part name="R28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k/5%"/>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="H3" library="dc26-shitty-addon" deviceset="SHITTY-ADDON-HEADER-MASTER" device=""/>
+<part name="U3" library="NPTC042KFMS-RC" deviceset="NPTC042KFMS-RC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9080,13 +8945,12 @@ Source: Samtec TSW.pdf</description>
 CONTROL</text>
 <text x="-121.92" y="40.64" size="5.08" layer="97">PGM/DEBUG
 HEADER</text>
-<text x="-243.84" y="137.16" size="5.08" layer="97">BADGELIFE SHITTY
+<text x="-243.84" y="124.46" size="5.08" layer="97">BADGELIFE SHITTY
 ADD-ON HEADER</text>
 <text x="-134.62" y="238.76" size="5.08" layer="97">VOLTAGE
 REGULATOR</text>
 </plain>
 <instances>
-<instance part="U3" gate="G$1" x="-10.16" y="68.58"/>
 <instance part="U1" gate="MCU" x="-144.78" y="137.16"/>
 <instance part="X1" gate="-1" x="-172.72" y="226.06" rot="MR0"/>
 <instance part="X1" gate="-2" x="-172.72" y="223.52" rot="MR0"/>
@@ -9189,13 +9053,11 @@ REGULATOR</text>
 <attribute name="VALUE" x="-202.184" y="103.251" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="SUPPLY17" gate="GND" x="-205.74" y="93.98"/>
-<instance part="H3" gate="-1" x="-208.28" y="157.48"/>
-<instance part="H3" gate="-2" x="-193.04" y="157.48" rot="MR0"/>
-<instance part="H3" gate="-3" x="-208.28" y="154.94"/>
-<instance part="H3" gate="-4" x="-193.04" y="154.94" rot="MR0"/>
 <instance part="R29" gate="G$1" x="-198.12" y="83.82" rot="R90"/>
 <instance part="R28" gate="G$1" x="-198.12" y="68.58" rot="R90"/>
 <instance part="SUPPLY18" gate="GND" x="-198.12" y="60.96"/>
+<instance part="H3" gate="G$1" x="-223.52" y="149.86"/>
+<instance part="U3" gate="G$1" x="-10.16" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -9260,10 +9122,10 @@ REGULATOR</text>
 <pinref part="SUPPLY8" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="-27.94" y1="76.2" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
 <wire x1="-27.94" y1="83.82" x2="-33.02" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="GND"/>
@@ -9306,13 +9168,13 @@ REGULATOR</text>
 <junction x="-205.74" y="96.52"/>
 </segment>
 <segment>
-<pinref part="H3" gate="-2" pin="1"/>
-<wire x1="-190.5" y1="157.48" x2="-175.26" y2="157.48" width="0.1524" layer="91"/>
-<label x="-187.96" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R28" gate="G$1" pin="1"/>
 <pinref part="SUPPLY18" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="H3" gate="G$1" pin="GND"/>
+<wire x1="-228.6" y1="149.86" x2="-243.84" y2="149.86" width="0.1524" layer="91"/>
+<label x="-241.3" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -9413,15 +9275,15 @@ REGULATOR</text>
 <label x="-187.96" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="H3" gate="-1" pin="1"/>
-<wire x1="-210.82" y1="157.48" x2="-223.52" y2="157.48" width="0.1524" layer="91"/>
-<label x="-220.98" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <wire x1="-198.12" y1="91.44" x2="-198.12" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="-198.12" y1="91.44" x2="-190.5" y2="91.44" width="0.1524" layer="91"/>
 <label x="-195.58" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="H3" gate="G$1" pin="VCC"/>
+<wire x1="-228.6" y1="152.4" x2="-243.84" y2="152.4" width="0.1524" layer="91"/>
+<label x="-241.3" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -10011,9 +9873,9 @@ REGULATOR</text>
 </net>
 <net name="ESP-TXD" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="TXD"/>
 <label x="7.62" y="76.2" size="1.778" layer="95"/>
 <wire x1="5.08" y1="76.2" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="TXD"/>
 </segment>
 <segment>
 <pinref part="U1" gate="MCU" pin="PA3"/>
@@ -10023,21 +9885,20 @@ REGULATOR</text>
 </net>
 <net name="ESP-CH_PD" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="CH_PD"/>
 <wire x1="5.08" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
 <label x="7.62" y="73.66" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="CH_PD"/>
 </segment>
 </net>
 <net name="ESP-RST" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="RST"/>
 <wire x1="5.08" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="7.62" y="71.12" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="RST"/>
 </segment>
 </net>
 <net name="ESP-GPIO2" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="GPIO2"/>
 <wire x1="-27.94" y1="73.66" x2="-53.34" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R23" gate="G$1" pin="2"/>
 <pinref part="R21" gate="G$1" pin="1"/>
@@ -10045,6 +9906,7 @@ REGULATOR</text>
 <wire x1="-53.34" y1="73.66" x2="-53.34" y2="81.28" width="0.1524" layer="91"/>
 <junction x="-53.34" y="73.66"/>
 <label x="-43.18" y="73.66" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GPIO2"/>
 </segment>
 <segment>
 <pinref part="U1" gate="MCU" pin="PA5"/>
@@ -10054,7 +9916,6 @@ REGULATOR</text>
 </net>
 <net name="ESP-GPIO0" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="GPIO0"/>
 <wire x1="-27.94" y1="71.12" x2="-45.72" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="R24" gate="G$1" pin="2"/>
 <pinref part="R22" gate="G$1" pin="1"/>
@@ -10062,6 +9923,7 @@ REGULATOR</text>
 <junction x="-45.72" y="71.12"/>
 <wire x1="-45.72" y1="71.12" x2="-45.72" y2="81.28" width="0.1524" layer="91"/>
 <label x="-43.18" y="71.12" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="GPIO0"/>
 </segment>
 <segment>
 <pinref part="U1" gate="MCU" pin="PA4"/>
@@ -10071,25 +9933,14 @@ REGULATOR</text>
 </net>
 <net name="ESP-RXD" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="RXD"/>
 <wire x1="-27.94" y1="68.58" x2="-38.1" y2="68.58" width="0.1524" layer="91"/>
 <label x="-38.1" y="68.58" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="RXD"/>
 </segment>
 <segment>
 <pinref part="U1" gate="MCU" pin="PA2"/>
 <wire x1="-121.92" y1="101.6" x2="-86.36" y2="101.6" width="0.1524" layer="91"/>
 <label x="-111.76" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP-VCC" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="VOUT"/>
-<wire x1="38.1" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="68.58" x2="5.08" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="58.42" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
-<junction x="7.62" y="68.58"/>
-<label x="15.24" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SERVO-PWM" class="0">
@@ -10147,9 +9998,9 @@ REGULATOR</text>
 <wire x1="-190.5" y1="172.72" x2="-190.5" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="H3" gate="-4" pin="1"/>
-<wire x1="-190.5" y1="154.94" x2="-175.26" y2="154.94" width="0.1524" layer="91"/>
-<label x="-187.96" y="154.94" size="1.778" layer="95"/>
+<pinref part="H3" gate="G$1" pin="SCK"/>
+<wire x1="-203.2" y1="149.86" x2="-187.96" y2="149.86" width="0.1524" layer="91"/>
+<label x="-200.66" y="149.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C1_SDA" class="0">
@@ -10161,9 +10012,9 @@ REGULATOR</text>
 <wire x1="-182.88" y1="172.72" x2="-182.88" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="H3" gate="-3" pin="1"/>
-<wire x1="-210.82" y1="154.94" x2="-223.52" y2="154.94" width="0.1524" layer="91"/>
-<label x="-220.98" y="154.94" size="1.778" layer="95"/>
+<pinref part="H3" gate="G$1" pin="SDA"/>
+<wire x1="-203.2" y1="152.4" x2="-187.96" y2="152.4" width="0.1524" layer="91"/>
+<label x="-200.66" y="152.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BOOT0" class="0">
@@ -10178,6 +10029,18 @@ REGULATOR</text>
 <wire x1="-167.64" y1="96.52" x2="-177.8" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-177.8" y1="96.52" x2="-177.8" y2="76.2" width="0.1524" layer="91"/>
 <label x="-187.96" y="76.2" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ESP-VCC" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="VOUT"/>
+<wire x1="5.08" y1="68.58" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="7.62" y1="68.58" x2="38.1" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="58.42" x2="7.62" y2="68.58" width="0.1524" layer="91"/>
+<junction x="7.62" y="68.58"/>
+<label x="7.62" y="68.58" size="1.778" layer="95"/>
+<pinref part="U3" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 </nets>
