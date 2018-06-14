@@ -395,20 +395,6 @@
 <description>&lt;b&gt;Molex Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="22-23-2021" library_version="2">
-<description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 2 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232021_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
-<wire x1="-2.54" y1="3.175" x2="2.54" y2="3.175" width="0.254" layer="21"/>
-<wire x1="2.54" y1="3.175" x2="2.54" y2="1.27" width="0.254" layer="21"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="2.54" y1="-3.175" x2="-2.54" y2="-3.175" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="-3.175" x2="-2.54" y2="1.27" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="3.175" width="0.254" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="21"/>
-<pad name="1" x="-1.27" y="0" drill="1" shape="long" rot="R90"/>
-<pad name="2" x="1.27" y="0" drill="1" shape="long" rot="R90"/>
-<text x="-2.54" y="3.81" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<text x="-2.54" y="-5.08" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="22-23-2031" library_version="2">
 <description>&lt;b&gt;KK® 254 Solid Header, Vertical, with Friction Lock, 3 Circuits, Tin (Sn) Plating&lt;/b&gt;&lt;p&gt;&lt;a href =http://www.molex.com/pdm_docs/sd/022232031_sd.pdf&gt;Datasheet &lt;/a&gt;</description>
 <wire x1="-3.81" y1="3.175" x2="3.81" y2="3.175" width="0.254" layer="21"/>
@@ -439,29 +425,6 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="22-23-2021" prefix="X" library_version="2">
-<description>.100" (2.54mm) Center Header - 2 Pin</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="0" addlevel="always" swaplevel="1"/>
-<gate name="-2" symbol="M" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
-</gates>
-<devices>
-<device name="" package="22-23-2021">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="MOLEX" constant="no"/>
-<attribute name="MPN" value="22-23-2021" constant="no"/>
-<attribute name="OC_FARNELL" value="1462926" constant="no"/>
-<attribute name="OC_NEWARK" value="25C3832" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="22-23-2031" prefix="X" library_version="2">
 <description>.100" (2.54mm) Center Header - 3 Pin</description>
 <gates>
@@ -8850,6 +8813,42 @@ FEMALE SMT</text>
 </deviceset>
 </devicesets>
 </library>
+<library name="battery_pads">
+<packages>
+<package name="BATTPADS-SMT">
+<smd name="1" x="0" y="0" dx="2.54" dy="5.08" layer="1"/>
+<smd name="2" x="5.08" y="0" dx="2.54" dy="5.08" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BATTPADS-SMT">
+<pin name="1" x="-5.08" y="0" length="middle"/>
+<pin name="2" x="-5.08" y="-2.54" length="middle"/>
+<wire x1="0" y1="2.54" x2="0" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="0" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BATTPADS-SMT">
+<gates>
+<gate name="G$1" symbol="BATTPADS-SMT" x="-5.08" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="BATTPADS-SMT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8861,7 +8860,6 @@ FEMALE SMT</text>
 </classes>
 <parts>
 <part name="U1" library="micro-stm_v3" deviceset="STM32F030C*T" device="" technology="8"/>
-<part name="X1" library="con-molex" library_urn="urn:adsk.eagle:library:165" deviceset="22-23-2021" device=""/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="L1" library="passives" deviceset="CIG22L4R7MNE" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="0"/>
@@ -8935,6 +8933,7 @@ FEMALE SMT</text>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF/16V/X7R"/>
 <part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="U$1" library="battery_pads" deviceset="BATTPADS-SMT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8959,8 +8958,6 @@ REGULATOR</text>
 <attribute name="NAME" x="-149.86" y="182.88" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-149.86" y="91.44" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-1" x="-172.72" y="226.06" rot="MR0"/>
-<instance part="X1" gate="-2" x="-172.72" y="223.52" rot="MR0"/>
 <instance part="SUPPLY1" gate="GND" x="-165.1" y="220.98"/>
 <instance part="L1" gate="G$1" x="-66.04" y="223.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="-66.04" y="227.33" size="1.778" layer="95" rot="R180"/>
@@ -9076,15 +9073,16 @@ REGULATOR</text>
 </instance>
 <instance part="SUPPLY19" gate="GND" x="-167.64" y="182.88"/>
 <instance part="SUPPLY20" gate="GND" x="-96.52" y="185.42"/>
+<instance part="U$1" gate="G$1" x="-175.26" y="226.06" rot="MR0"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="X1" gate="-2" pin="S"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <wire x1="-170.18" y1="223.52" x2="-165.1" y2="223.52" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
@@ -9216,7 +9214,6 @@ REGULATOR</text>
 </net>
 <net name="VBAT" class="0">
 <segment>
-<pinref part="X1" gate="-1" pin="S"/>
 <label x="-162.56" y="226.06" size="1.778" layer="95"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-134.62" y1="218.44" x2="-134.62" y2="220.98" width="0.1524" layer="91"/>
@@ -9227,6 +9224,7 @@ REGULATOR</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <junction x="-134.62" y="220.98"/>
 <pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="U$1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="H2" gate="-3" pin="S"/>
