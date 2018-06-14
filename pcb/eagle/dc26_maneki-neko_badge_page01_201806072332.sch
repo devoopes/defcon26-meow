@@ -8931,6 +8931,10 @@ FEMALE SMT</text>
 <part name="SUPPLY18" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="H3" library="dc26-shitty-addon" deviceset="SHITTY-ADDON-HEADER-MASTER" device=""/>
 <part name="U3" library="NPTC042KFMS-RC" deviceset="NPTC042KFMS-RC" device=""/>
+<part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF/16V/X7R"/>
+<part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF/16V/X7R"/>
+<part name="SUPPLY19" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
+<part name="SUPPLY20" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8951,7 +8955,10 @@ ADD-ON HEADER</text>
 REGULATOR</text>
 </plain>
 <instances>
-<instance part="U1" gate="MCU" x="-144.78" y="137.16"/>
+<instance part="U1" gate="MCU" x="-144.78" y="137.16" smashed="yes">
+<attribute name="NAME" x="-149.86" y="182.88" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-149.86" y="91.44" size="1.778" layer="96"/>
+</instance>
 <instance part="X1" gate="-1" x="-172.72" y="226.06" rot="MR0"/>
 <instance part="X1" gate="-2" x="-172.72" y="223.52" rot="MR0"/>
 <instance part="SUPPLY1" gate="GND" x="-165.1" y="220.98"/>
@@ -9058,6 +9065,17 @@ REGULATOR</text>
 <instance part="SUPPLY18" gate="GND" x="-198.12" y="60.96"/>
 <instance part="H3" gate="G$1" x="-223.52" y="149.86"/>
 <instance part="U3" gate="G$1" x="-10.16" y="68.58"/>
+<instance part="U1" gate="PWR" x="-147.32" y="190.5" rot="R270"/>
+<instance part="C11" gate="G$1" x="-88.9" y="195.58" smashed="yes" rot="MR0">
+<attribute name="NAME" x="-85.344" y="197.485" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="-85.344" y="194.691" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="C12" gate="G$1" x="-96.52" y="195.58" smashed="yes">
+<attribute name="NAME" x="-100.076" y="197.485" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-100.076" y="194.691" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY19" gate="GND" x="-167.64" y="182.88"/>
+<instance part="SUPPLY20" gate="GND" x="-96.52" y="185.42"/>
 </instances>
 <busses>
 </busses>
@@ -9176,6 +9194,25 @@ REGULATOR</text>
 <wire x1="-228.6" y1="149.86" x2="-243.84" y2="149.86" width="0.1524" layer="91"/>
 <label x="-241.3" y="149.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SUPPLY19" gate="GND" pin="GND"/>
+<pinref part="U1" gate="PWR" pin="VSS@1"/>
+<wire x1="-167.64" y1="185.42" x2="-167.64" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="187.96" x2="-167.64" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="-167.64" y1="193.04" x2="-165.1" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="U1" gate="PWR" pin="VSS@2"/>
+<wire x1="-165.1" y1="187.96" x2="-167.64" y2="187.96" width="0.1524" layer="91"/>
+<junction x="-167.64" y="187.96"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="SUPPLY20" gate="GND" pin="GND"/>
+<wire x1="-96.52" y1="190.5" x2="-96.52" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="-88.9" y1="190.5" x2="-88.9" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="187.96" x2="-96.52" y2="187.96" width="0.1524" layer="91"/>
+<junction x="-96.52" y="187.96"/>
+</segment>
 </net>
 <net name="VBAT" class="0">
 <segment>
@@ -9284,6 +9321,30 @@ REGULATOR</text>
 <pinref part="H3" gate="G$1" pin="VCC"/>
 <wire x1="-228.6" y1="152.4" x2="-243.84" y2="152.4" width="0.1524" layer="91"/>
 <label x="-241.3" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="PWR" pin="VDD@3"/>
+<wire x1="-129.54" y1="185.42" x2="-127" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="-127" y1="185.42" x2="-127" y2="190.5" width="0.1524" layer="91"/>
+<pinref part="U1" gate="PWR" pin="VDD@1"/>
+<wire x1="-127" y1="190.5" x2="-127" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="-127" y1="195.58" x2="-129.54" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="U1" gate="PWR" pin="VDD@2"/>
+<wire x1="-129.54" y1="190.5" x2="-127" y2="190.5" width="0.1524" layer="91"/>
+<junction x="-127" y="190.5"/>
+<wire x1="-127" y1="195.58" x2="-116.84" y2="195.58" width="0.1524" layer="91"/>
+<label x="-124.46" y="195.58" size="1.778" layer="95"/>
+<junction x="-127" y="195.58"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="-96.52" y1="198.12" x2="-96.52" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="200.66" x2="-104.14" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="-88.9" y1="198.12" x2="-88.9" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="-88.9" y1="200.66" x2="-96.52" y2="200.66" width="0.1524" layer="91"/>
+<junction x="-96.52" y="200.66"/>
+<label x="-104.14" y="200.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$3" class="0">
