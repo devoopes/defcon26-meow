@@ -9439,12 +9439,22 @@ REGULATOR</text>
 <wire x1="-96.52" y1="162.56" x2="-121.92" y2="162.56" width="0.1524" layer="91"/>
 <label x="-111.76" y="162.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="119.38" x2="-58.42" y2="119.38" width="0.1524" layer="91"/>
+<label x="-48.26" y="119.38" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB8" class="0">
 <segment>
 <pinref part="U1" gate="MCU" pin="PB8"/>
 <wire x1="-121.92" y1="160.02" x2="-96.52" y2="160.02" width="0.1524" layer="91"/>
 <label x="-111.76" y="160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="165.1" x2="-58.42" y2="165.1" width="0.1524" layer="91"/>
+<label x="-48.26" y="165.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB7" class="0">
@@ -9453,12 +9463,22 @@ REGULATOR</text>
 <wire x1="-96.52" y1="157.48" x2="-121.92" y2="157.48" width="0.1524" layer="91"/>
 <label x="-111.76" y="157.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="124.46" x2="-58.42" y2="124.46" width="0.1524" layer="91"/>
+<label x="-48.26" y="124.46" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB6" class="0">
 <segment>
 <pinref part="U1" gate="MCU" pin="PB6"/>
 <wire x1="-121.92" y1="154.94" x2="-96.52" y2="154.94" width="0.1524" layer="91"/>
 <label x="-111.76" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="170.18" x2="-58.42" y2="170.18" width="0.1524" layer="91"/>
+<label x="-48.26" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB5" class="0">
@@ -9467,12 +9487,22 @@ REGULATOR</text>
 <wire x1="-96.52" y1="152.4" x2="-121.92" y2="152.4" width="0.1524" layer="91"/>
 <label x="-111.76" y="152.4" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="175.26" x2="-58.42" y2="175.26" width="0.1524" layer="91"/>
+<label x="-48.26" y="175.26" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB4" class="0">
 <segment>
 <pinref part="U1" gate="MCU" pin="PB4"/>
 <wire x1="-121.92" y1="149.86" x2="-96.52" y2="149.86" width="0.1524" layer="91"/>
 <label x="-111.76" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="-30.48" y1="129.54" x2="-58.42" y2="129.54" width="0.1524" layer="91"/>
+<label x="-48.26" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PB3" class="0">
@@ -9481,12 +9511,13 @@ REGULATOR</text>
 <wire x1="-96.52" y1="147.32" x2="-121.92" y2="147.32" width="0.1524" layer="91"/>
 <label x="-111.76" y="147.32" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="134.62" x2="-58.42" y2="134.62" width="0.1524" layer="91"/>
+<label x="-48.26" y="134.62" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PB2" class="0">
-<segment>
-<pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="-58.2676" y1="124.46" x2="-20.32" y2="124.46" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U1" gate="MCU" pin="PB2"/>
 <wire x1="-121.92" y1="144.78" x2="-96.52" y2="144.78" width="0.1524" layer="91"/>
@@ -9500,10 +9531,6 @@ REGULATOR</text>
 </net>
 <net name="PB1" class="0">
 <segment>
-<pinref part="R19" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="119.38" x2="-58.2676" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U1" gate="MCU" pin="PB1"/>
 <wire x1="-96.52" y1="142.24" x2="-121.92" y2="142.24" width="0.1524" layer="91"/>
 <label x="-111.76" y="142.24" size="1.778" layer="95"/>
@@ -9516,13 +9543,14 @@ REGULATOR</text>
 </net>
 <net name="PB0" class="0">
 <segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<wire x1="-58.2676" y1="114.3" x2="-20.32" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U1" gate="MCU" pin="PB0"/>
 <wire x1="-121.92" y1="139.7" x2="-96.52" y2="139.7" width="0.1524" layer="91"/>
 <label x="-111.76" y="139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="114.3" x2="-58.42" y2="114.3" width="0.1524" layer="91"/>
+<label x="-48.26" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED-SEG-U" class="0">
@@ -10106,36 +10134,6 @@ REGULATOR</text>
 <junction x="7.62" y="68.58"/>
 <label x="7.62" y="68.58" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="VCC"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="170.18" x2="-58.42" y2="170.18" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="-58.2676" y1="134.62" x2="-20.32" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="-30.48" y1="129.54" x2="-58.2676" y2="129.54" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="-58.2676" y1="165.1" x2="-20.32" y2="165.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="-58.42" y1="175.26" x2="-20.32" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
