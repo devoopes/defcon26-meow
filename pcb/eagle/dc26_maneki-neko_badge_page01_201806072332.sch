@@ -9982,12 +9982,22 @@ REGULATOR</text>
 <label x="7.62" y="73.66" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="CH_PD"/>
 </segment>
+<segment>
+<pinref part="U1" gate="MCU" pin="PA0-WKUP"/>
+<wire x1="-121.92" y1="96.52" x2="-86.36" y2="96.52" width="0.1524" layer="91"/>
+<label x="-111.76" y="96.52" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="ESP-RST" class="0">
 <segment>
 <wire x1="5.08" y1="71.12" x2="30.48" y2="71.12" width="0.1524" layer="91"/>
 <label x="7.62" y="71.12" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="RST"/>
+</segment>
+<segment>
+<pinref part="U1" gate="MCU" pin="PA1"/>
+<wire x1="-121.92" y1="99.06" x2="-86.36" y2="99.06" width="0.1524" layer="91"/>
+<label x="-111.76" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ESP-GPIO2" class="0">
