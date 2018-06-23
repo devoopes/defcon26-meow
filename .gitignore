@@ -3,7 +3,7 @@
 *.b#*
 *.log
 *.lck
-dxfimp.scr
+*.scr
 *.bak
 *.bck
 *.dcm
