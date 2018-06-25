@@ -8885,8 +8885,8 @@ FEMALE SMT</text>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270/5%"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270/5%"/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="270/5%"/>
-<part name="D1" library="PSA08-11SRWA" deviceset="PSA08-11SRWA" device=""/>
-<part name="D2" library="PSA08-11SRWA" deviceset="PSA08-11SRWA" device=""/>
+<part name="D1" library="PSA08-11SRWA" deviceset="PSA08-11SRWA" device="" value="PSA08-11SRWA"/>
+<part name="D2" library="PSA08-11SRWA" deviceset="PSA08-11SRWA" device="" value="PSA08-11SRWA"/>
 <part name="U6" library="MIC2005A-1YM5-TR" deviceset="MIC2005A-1YM5-TR" device="" value="MIC2005A-1YM5-TR"/>
 <part name="U5" library="MIC2005A-1YM5-TR" deviceset="MIC2005A-1YM5-TR" device="" value="MIC2005A-1YM5-TR"/>
 <part name="H1" library="20021121-00010T4LF" deviceset="20021121-00010T4LF" device=""/>
@@ -8903,7 +8903,7 @@ FEMALE SMT</text>
 <part name="SUPPLY7" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY8" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY9" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U4" library="MIC2005A-1YM5-TR" deviceset="MIC2005A-1YM5-TR" device=""/>
+<part name="U4" library="MIC2005A-1YM5-TR" deviceset="MIC2005A-1YM5-TR" device="" value="MIC2005A-1YM5-TR"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="1uF/16V/X7R"/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -10149,6 +10149,15 @@ REGULATOR</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-167.64,106.68,U1,VDDA,3V3,,,"/>
+<approved hash="104,1,-167.64,104.14,U1,VSSA,GND,,,"/>
+<approved hash="104,1,-129.54,195.58,U1PWR,VDD,3V3,,,"/>
+<approved hash="104,1,-165.1,193.04,U1PWR,VSS,GND,,,"/>
+<approved hash="104,1,-129.54,190.5,U1PWR,VDD,3V3,,,"/>
+<approved hash="104,1,-165.1,187.96,U1PWR,VSS,GND,,,"/>
+<approved hash="104,1,-129.54,185.42,U1PWR,VDD,3V3,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
