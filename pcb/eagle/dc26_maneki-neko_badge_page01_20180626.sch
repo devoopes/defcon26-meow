@@ -10053,14 +10053,14 @@ REGULATOR</text>
 </net>
 <net name="!RESET" class="0">
 <segment>
-<pinref part="H1" gate="G$1" pin="10"/>
-<wire x1="-93.98" y1="63.5" x2="-68.58" y2="63.5" width="0.1524" layer="91"/>
-<label x="-88.9" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U1" gate="MCU" pin="NRST"/>
 <wire x1="-167.64" y1="99.06" x2="-180.34" y2="99.06" width="0.1524" layer="91"/>
 <label x="-177.8" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-114.3" y1="63.5" x2="-129.54" y2="63.5" width="0.1524" layer="91"/>
+<label x="-119.38" y="63.5" size="1.778" layer="95" rot="MR0"/>
+<pinref part="H1" gate="G$1" pin="9"/>
 </segment>
 </net>
 <net name="LED-ANODE-LEFT" class="0">
