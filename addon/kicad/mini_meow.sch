@@ -106,4 +106,18 @@ Wire Wire Line
 Wire Wire Line
 	5850 4800 5850 4350
 Connection ~ 4650 4550
+$Comp
+L GND #PWR?
+U 1 1 5B47CD76
+P 5300 4950
+F 0 "#PWR?" H 5300 4700 50  0001 C CNN
+F 1 "GND" H 5300 4800 50  0000 C CNN
+F 2 "" H 5300 4950 50  0001 C CNN
+F 3 "" H 5300 4950 50  0001 C CNN
+	1    5300 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5300 4950 5300 4800
+Connection ~ 5300 4800
 $EndSCHEMATC
