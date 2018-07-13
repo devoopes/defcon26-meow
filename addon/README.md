@@ -3,7 +3,7 @@ This folder contains the in-progress files for a Maneki-Neko "Shitty Add-On" as 
 
 BIG Thank You's go to [Contextual Electronics](https://www.youtube.com/channel/UCkJRycUz2CylxpiP-zMePow) for the YouTube Getting to Blinky Series.
 
-NOTE: This is in-progress, so some steps may be out of order or may need revision.
+NOTE: This is in-progress, so some steps may need revision or may be low on details.
 
 # Making the Add-On!
 
@@ -11,7 +11,7 @@ NOTE: This is in-progress, so some steps may be out of order or may need revisio
 Open KiCad and create a new project. A blank layout and schematic will be created when you create the project.
 
 2. Open Schematic
-There are many ways to do this. Youcan:
+There are many ways to do this. You can:
 
 - Double-click the .sch file
 - Click the Eeschema Launcher shortcut
@@ -23,7 +23,15 @@ There are many ways to do this. Youcan:
 - Create component for the connector
 
 4. Build Schematic
+- Open Schematic Editor
+- Add components to the schematic: LEDs, Resistors, Connector
+- Add wiring for components
+- Annotate schematic
+- Run Error Rule Checking
 
 5. Create Net List
 
 6. Create Layout
+- Run PCBNew to create layout
+= Go back to Schematic Editor
+- Click icon for CvPcb to associate schematic components with component footprints for Layout
