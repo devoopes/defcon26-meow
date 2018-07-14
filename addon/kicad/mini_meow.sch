@@ -99,23 +99,10 @@ F 3 "" H 5300 4950 50  0001 C CNN
 	1    5300 4950
 	1    0    0    -1  
 $EndComp
-$Comp
-L R R2
-U 1 1 5B48B2F9
-P 5500 4450
-F 0 "R2" V 5580 4450 50  0000 C CNN
-F 1 "51" V 5500 4450 50  0000 C CNN
-F 2 "" V 5430 4450 50  0001 C CNN
-F 3 "" H 5500 4450 50  0001 C CNN
-	1    5500 4450
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	5850 4250 5650 4250
 Wire Wire Line
-	5200 4050 5200 4250
-Wire Wire Line
-	5200 4250 5350 4250
+	5250 4050 5250 4550
 Wire Wire Line
 	4900 4050 4650 4050
 Wire Wire Line
@@ -131,13 +118,10 @@ Wire Wire Line
 	5300 4950 5300 4800
 Connection ~ 5300 4800
 Wire Wire Line
-	5650 4450 5650 4350
-Wire Wire Line
-	5650 4350 5850 4350
-Wire Wire Line
-	5350 4450 5250 4450
-Wire Wire Line
-	5250 4450 5250 4550
-Wire Wire Line
 	5250 4550 5200 4550
+Wire Wire Line
+	5250 4050 5200 4050
+Wire Wire Line
+	5350 4250 5250 4250
+Connection ~ 5250 4250
 $EndSCHEMATC
