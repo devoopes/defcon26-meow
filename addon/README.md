@@ -33,5 +33,11 @@ There are many ways to do this. You can:
 
 6. Create Layout
 - Run PCBNew to create layout
-= Go back to Schematic Editor
+- Go back to Schematic Editor
 - Click icon for CvPcb to associate schematic components with component footprints for Layout
+
+7. Add Footprint for Add-on connector
+- Go to Footprint Editor
+- Add Footprint
+- Save footprint to new library
+- Add Footprint Libraries Wizard

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name mini_meow)(type KiCad)(uri "$(KIPRJMOD)/mini_meow.pretty")(options "")(descr ""))
+)
