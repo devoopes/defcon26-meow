@@ -17,7 +17,7 @@ Jeff's design from the concept art.
 #TODO Add Jeff's links
 
 After getting it back from the fab shop:
-![alt text](https://github.com/SeanLeftBelow/defcon26-meow/blob/Docs/photos/fab.jpg "Back from fab"")
+![alt text](https://github.com/SeanLeftBelow/defcon26-meow/blob/master/photos/fab.jpg "Back from fab")
 
 ### Electronics
 
