@@ -17,10 +17,10 @@
    xml:space="preserve"
    id="svg5689"
    sodipodi:docname="meow_v4_silk.svg"
-   inkscape:version="0.92.1 r15371"><metadata
+   inkscape:version="0.91 r13725"><metadata
      id="metadata5695"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs5693" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -40,7 +40,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
-     inkscape:current-layer="Layer_2" /><style
+     inkscape:current-layer="layer2" /><style
      type="text/css"
      id="style5515">
 	.st0{fill:#EFEFEF;}
@@ -194,6 +194,12 @@
          inkscape:locked="false"
          orientation="0,1"
          position="84.297592,194.9914" /></sodipodi:namedview></g><g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Back" /><g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Front" /><g
      id="Layer_2"><path
        class="st0"
        d="M150.5,153.1H92.8c-28.9,0-52.8,22.5-54.6,51.3l-4.7,75.7c-1.9,31.5,23.1,58.1,54.6,58.1h67   c31.5,0,56.5-26.6,54.6-58.1l-4.7-75.7C203.3,175.6,179.4,153.1,150.5,153.1z"
