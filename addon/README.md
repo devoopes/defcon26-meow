@@ -47,18 +47,31 @@ There are many ways to do this. You can:
 - Add Footprint Libraries Wizard
 
 8. Layout PCB
-layout components
+- Layout components so that ratsnest wires do not cross connect
 
 9. Define Edge Cut layer
 (prepare for frustration, desperation, time loss, or maybe everything just goes according to plan!)
-Create DXF file for Import
+- Create DXF file for Import based on solid outline
+- @TODO add details on best practices for creating a good DXF for import
+- Note that dimensions should match
 
-Import DXF
+10. Import Silkscreen Image
+- Create silkscreen as footprint and import using BMP to Component tool
+- @TODO add details
+- There may be some trial and error to get the dimensions to match
+- 1000x1000 px resolution png with inverted colors ended up with the best results (light image dark background)
+- Import to silk layer
 
-
+11. Setup Copper Layers
+- Create copper layers as individual images and import using BMP to Component tool
+- @TODO add details
+- There may be some trial and error to get the dimensions to match
+- 1000x1000 px resolution png with inverted colors ended up with the best results (light image dark background)
+- Import to .... F.Cu layer?
 
 NOTES:
 The program assumes arbitrary input resolution of 300ppi, so a 300 by 300 image will give a 1" by 1" logo on the board.
 
 Want to learn more about PCB Layout and solder mask?
 https://learn.sparkfun.com/tutorials/pcb-basics/composition
+https://learn.sparkfun.com/tutorials/beginners-guide-to-kicad/editing-a-pcb-layout
