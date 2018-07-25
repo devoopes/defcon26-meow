@@ -1,3 +1,4 @@
+# files
 .DS_Store
 *.s#*
 *.b#*
@@ -8,3 +9,7 @@
 -bak
 *.bck
 *.dcm
+
+# directories
+
+Objects/
