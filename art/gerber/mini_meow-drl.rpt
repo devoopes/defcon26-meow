@@ -1,0 +1,24 @@
+Drill report for /Users/murriel/Documents/projects/PCBMeow/defcon26-meow/addon/kicad/mini_meow.kicad_pcb
+Created on Thursday, July 26, 2018 'AMt' 11:29:15 AM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'mini_meow.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.70mm  0.028"  (4 holes)
+    T2  0.90mm  0.035"  (4 holes)
+    T3  1.00mm  0.039"  (4 holes)
+
+    Total plated holes count 12
+
+
+Drill file 'mini_meow-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0
