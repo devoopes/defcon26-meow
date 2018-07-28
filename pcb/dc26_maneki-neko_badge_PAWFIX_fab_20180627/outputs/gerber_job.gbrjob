@@ -1,0 +1,13 @@
+G04 Gerber job file.*
+%TF.FileFunction,JobInfo*%
+%TF.GenerationSoftware,Autodesk,EAGLE,9.0.1*%
+%TF.CreationDate,2018-07-28T04:13:14Z*%
+%TF.Part,Single*%
+%MOMM*%
+%TJ.B_Owner,Daniel Samarin <dsamarin1@gmail.com>*%
+%TJ.B_ID,dc26_maneki-neko_badge_standalone_20180726*%
+%TJ.B_LayerNum,4*%
+%TJ.B_Thickness,1.640000*%
+%TJ.B_Size_X,75.787631*%
+%TJ.B_Size_Y,126.674959*%
+M02*

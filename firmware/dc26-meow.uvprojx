@@ -396,6 +396,11 @@
               <FileType>1</FileType>
               <FilePath>C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Source\Templates\system_stm32f0xx.c</FilePath>
             </File>
+            <File>
+              <FileName>system_stm32f0xx.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>C:\Keil_v5\ARM\PACK\Keil\STM32F0xx_DFP\2.0.0\Drivers\CMSIS\Device\ST\STM32F0xx\Include\system_stm32f0xx.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
