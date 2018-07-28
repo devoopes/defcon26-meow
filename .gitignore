@@ -6,6 +6,7 @@
 *.lck
 *.scr
 *.bak
+-bak
 *.bck
 *.dcm
 .~lock.*
