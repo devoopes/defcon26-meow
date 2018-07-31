@@ -50,9 +50,12 @@
 I2C_HandleTypeDef hi2c2;
 
 TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim3;
 
 /* USER CODE BEGIN PV */
 /* Private variables ---------------------------------------------------------*/
+
+uint8_t servo_position = 10;
 
 /* USER CODE END PV */
 
@@ -61,6 +64,7 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C2_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_TIM3_Init(void);
                                     
 void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
                                 
@@ -69,7 +73,8 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 /* Private function prototypes -----------------------------------------------*/
 
 void neko_led_test(void);
-void neko_servo_setDuty(uint16_t);
+void neko_servo_setDuty(uint8_t);
+void neko_waveAnimation(void);
 
 /* USER CODE END PFP */
 
@@ -108,6 +113,7 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C2_Init();
   MX_TIM1_Init();
+  MX_TIM3_Init();
   /* USER CODE BEGIN 2 */
 
 	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_2|GPIO_PIN_10 
@@ -121,21 +127,21 @@ int main(void)
 										|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_SET); //turn off all leds
 
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-	
-	TIM_OC_InitTypeDef nekopwm;
-	TIM_HandleTypeDef    TimHandle;
 
-	/* USER CODE END 2 */
+	TIM_HandleTypeDef    TimHandle;
+	
+	// this was the magic to get the timer started + enable the interrupt
+	// everything else came from cubemx generated code
+	HAL_TIM_Base_Start_IT(&htim3); //start hardware timer 3 in interrupt mode
+
+	neko_waveAnimation();
+
+  /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		
-		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 20); // target 2 msec
-		HAL_Delay(1000);
-		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, 10); // target 1 msec
-		HAL_Delay(1000);
 		
   /* USER CODE END WHILE */
 
@@ -241,7 +247,7 @@ static void MX_TIM1_Init(void)
   htim1.Instance = TIM1;
   htim1.Init.Prescaler = (48000000/(200*50))-1;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 200; // produces 50 hz, i have no idea why
+  htim1.Init.Period = 200;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -293,6 +299,39 @@ static void MX_TIM1_Init(void)
   }
 
   HAL_TIM_MspPostInit(&htim1);
+
+}
+
+/* TIM3 init function */
+static void MX_TIM3_Init(void)
+{
+
+  TIM_ClockConfigTypeDef sClockSourceConfig;
+  TIM_MasterConfigTypeDef sMasterConfig;
+
+  htim3.Instance = TIM3;
+  htim3.Init.Prescaler = 48000-1;
+  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim3.Init.Period = 1000-1;
+  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
+
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  {
+    _Error_Handler(__FILE__, __LINE__);
+  }
 
 }
 
@@ -372,6 +411,28 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
+// i believe this gets called for all timer interrupts and the if statement filters them out
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == htim3.Instance)
+    {
+			neko_servo_setDuty(servo_position);
+			servo_position++;
+			if(servo_position >= 20)
+			{
+				servo_position = 10;
+				//neko_waveAnimation();
+			}
+//			for(int i = 0; i<3; i++)
+//			{
+//				neko_servo_setDuty(10);
+//				HAL_Delay(400);
+//				neko_servo_setDuty(20);
+//				HAL_Delay(400);
+//			}		
+    }
+}
+
 void neko_led_test(void)
 {
 	
@@ -396,16 +457,27 @@ void neko_led_test(void)
 
 
 
-void neko_servo_setDuty(uint16_t value)
+void neko_servo_setDuty(uint8_t value)
 {
-    TIM_OC_InitTypeDef sConfigOC;
-  
-    sConfigOC.OCMode = TIM_OCMODE_PWM1;
-    sConfigOC.Pulse = value;
-    sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-    sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-    HAL_TIM_PWM_ConfigChannel(&htim1, &sConfigOC, TIM_CHANNEL_1);
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);  
+	if ((value >= 10)||(value <= 20))
+	{
+		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, value); // target 1 msec
+	}
+}
+
+
+#define DUTYHIGH 10
+#define DUTYLOW 20
+#define WAVEDELAY 400
+void neko_waveAnimation(void)
+{
+	for(int i = 0; i<3; i++)
+	{
+		neko_servo_setDuty(10);
+		HAL_Delay(400);
+		neko_servo_setDuty(20);
+		HAL_Delay(400);
+	}
 }
 /* USER CODE END 4 */
 
@@ -450,3 +522,4 @@ void assert_failed(uint8_t* file, uint32_t line)
   * @}
   */
 
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

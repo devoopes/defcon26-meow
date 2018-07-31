@@ -10,6 +10,7 @@
 *.bck
 *.dcm
 .~lock.*
+*.o
 
 # directories
 
