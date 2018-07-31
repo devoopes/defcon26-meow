@@ -1,0 +1,24 @@
+--cpu Cortex-M0
+"meow_cubemx\startup_stm32f030x8.o"
+"meow_cubemx\main.o"
+"meow_cubemx\stm32f0xx_it.o"
+"meow_cubemx\stm32f0xx_hal_msp.o"
+"meow_cubemx\stm32f0xx_hal_i2c.o"
+"meow_cubemx\stm32f0xx_hal_i2c_ex.o"
+"meow_cubemx\stm32f0xx_hal_tim.o"
+"meow_cubemx\stm32f0xx_hal_tim_ex.o"
+"meow_cubemx\stm32f0xx_hal_rcc.o"
+"meow_cubemx\stm32f0xx_hal_rcc_ex.o"
+"meow_cubemx\stm32f0xx_hal.o"
+"meow_cubemx\stm32f0xx_hal_gpio.o"
+"meow_cubemx\stm32f0xx_hal_dma.o"
+"meow_cubemx\stm32f0xx_hal_cortex.o"
+"meow_cubemx\stm32f0xx_hal_pwr.o"
+"meow_cubemx\stm32f0xx_hal_pwr_ex.o"
+"meow_cubemx\stm32f0xx_hal_flash.o"
+"meow_cubemx\stm32f0xx_hal_flash_ex.o"
+"meow_cubemx\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "meow_cubemx\meow_cubemx.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "meow_cubemx.map" -o meow_cubemx\meow_cubemx.axf
