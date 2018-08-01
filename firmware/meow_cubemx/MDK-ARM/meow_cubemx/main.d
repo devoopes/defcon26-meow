@@ -29,3 +29,5 @@ meow_cubemx\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_pwr_ex.h
 meow_cubemx\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim.h
 meow_cubemx\main.o: ../Drivers/STM32F0xx_HAL_Driver/Inc/stm32f0xx_hal_tim_ex.h
 meow_cubemx\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+meow_cubemx\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+meow_cubemx\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
