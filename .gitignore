@@ -11,6 +11,7 @@
 *.dcm
 .~lock.*
 *.o
+*.crf
 
 # directories
 

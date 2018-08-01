@@ -60,6 +60,7 @@ TIM_HandleTypeDef htim3;
 
 uint8_t servo_position = 10;
 int seconds = 0;
+bool ledFlag = false;
 uint16_t eyesOpen = 0xC699; // outer perimeter on
 uint16_t eyesHappy = 0x0CC0; // upper bucket on
 uint16_t eyesClosed = 0x0840; // middle horizontal on
@@ -83,8 +84,8 @@ void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 void neko_led_test(void);
 void neko_servo_setDuty(uint8_t);
 void neko_waveAnimation(void);
-void neko_blinkAnimation(void);
-
+void neko_blinkOnceAnimation(void);
+void neko_blinkTwiceAnimation(void);
 /* USER CODE END PFP */
 
 /* USER CODE BEGIN 0 */
@@ -155,15 +156,24 @@ int main(void)
 		HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); // no eyes
 		HAL_GPIO_WritePin(GPIOB, eyesOpen, GPIO_PIN_RESET); // open eyes
 		
-		if(seconds % 30 == 0)
+		if(ledFlag)
 		{
-			neko_waveAnimation();
+			if(seconds % 30 == 0)
+			{
+				neko_waveAnimation();
+			}
+			
+			if(seconds % 7 == 0)
+			{
+				neko_blinkOnceAnimation();
+			}			
+			
+			if(seconds % 11 == 0)
+			{
+				neko_blinkTwiceAnimation();
+			}
+			ledFlag = false;
 		}
-		
-		if(seconds % 7 == 0)
-		{
-			neko_blinkAnimation();
-		}			
 		
 		
 		
@@ -336,9 +346,9 @@ static void MX_TIM3_Init(void)
   TIM_MasterConfigTypeDef sMasterConfig;
 
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 48000-1; // 48 meg / 48k = 1 khz
+  htim3.Init.Prescaler = 48000-1;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 1000-1; // 1 khz * 1k = 1 second
+  htim3.Init.Period = 1000-1;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -393,8 +403,8 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : PC13 */
   GPIO_InitStruct.Pin = GPIO_PIN_13;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PA0 PA1 PA5 PA6 
@@ -433,6 +443,10 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+  /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI4_15_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI4_15_IRQn);
+
 }
 
 /* USER CODE BEGIN 4 */
@@ -444,6 +458,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     {
 			//HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_15);
 			seconds++;
+			ledFlag = true;
     }
 }
 
@@ -466,10 +481,7 @@ void neko_led_test(void)
 	HAL_Delay(delaytime);
 	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_15, GPIO_PIN_SET);
 	
-	
 }
-
-
 
 void neko_servo_setDuty(uint8_t value)
 {
@@ -480,39 +492,37 @@ void neko_servo_setDuty(uint8_t value)
 }
 
 
-#define DUTYHIGH 10
-#define DUTYLOW 20
-#define WAVEDELAY 400
 void neko_waveAnimation(void)
 {
 	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); // no eyes
 	HAL_GPIO_WritePin(GPIOB, eyesStars, GPIO_PIN_RESET);
 	for(int i = 0; i<3; i++)
 	{
-		neko_servo_setDuty(DUTYHIGH);
-		HAL_Delay(WAVEDELAY);
-		neko_servo_setDuty(DUTYLOW);
-		HAL_Delay(WAVEDELAY);
+		neko_servo_setDuty(10);
+		HAL_Delay(400);
+		neko_servo_setDuty(20);
+		HAL_Delay(400);
 	}
 }
 
-void neko_blinkAnimation(void)
+void neko_blinkOnceAnimation(void)
 {
 	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); 
 	HAL_GPIO_WritePin(GPIOB, eyesClosed, GPIO_PIN_RESET); 
-	HAL_Delay(100);
-	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); 
-	HAL_GPIO_WritePin(GPIOB, eyesOpen, GPIO_PIN_RESET); 
-	HAL_Delay(400);
-	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); 
-	HAL_GPIO_WritePin(GPIOB, eyesClosed, GPIO_PIN_RESET); 
-	HAL_Delay(100);
-	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); 
-	HAL_GPIO_WritePin(GPIOB, eyesOpen, GPIO_PIN_RESET); 
-	HAL_Delay(1200);
+	HAL_Delay(75); 
+}
+
+void neko_blinkTwiceAnimation(void)
+{
 	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); 
 	HAL_GPIO_WritePin(GPIOB, eyesClosed, GPIO_PIN_RESET); 
-	HAL_Delay(100);
+	HAL_Delay(75);
+	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); 
+	HAL_GPIO_WritePin(GPIOB, eyesOpen, GPIO_PIN_RESET); 
+	HAL_Delay(300);
+	HAL_GPIO_WritePin(GPIOB, 0xFFFF, GPIO_PIN_SET); 
+	HAL_GPIO_WritePin(GPIOB, eyesClosed, GPIO_PIN_RESET); 
+	HAL_Delay(75);
 }
 
 /* USER CODE END 4 */
