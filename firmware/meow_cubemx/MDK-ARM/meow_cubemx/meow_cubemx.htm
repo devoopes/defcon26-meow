@@ -3,7 +3,7 @@
 <title>Static Call Graph - [meow_cubemx\meow_cubemx.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image meow_cubemx\meow_cubemx.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Jul 31 23:56:51 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Aug 06 19:13:38 2018
 <BR><P>
 <H3>Maximum Stack Usage =        304 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -338,7 +338,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[37]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GetTick
 </UL>
-<BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_led_test
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_blinkTwiceAnimation
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_blinkOnceAnimation
@@ -365,7 +365,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[64]"></a>HAL_GPIO_WritePin</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f0xx_hal_gpio.o(i.HAL_GPIO_WritePin))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
+<BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_led_test
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_blinkTwiceAnimation
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_blinkOnceAnimation
@@ -553,7 +553,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Init
 </UL>
 
-<P><STRONG><a name="[77]"></a>HAL_TIM_Base_Start_IT</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f0xx_hal_tim.o(i.HAL_TIM_Base_Start_IT))
+<P><STRONG><a name="[78]"></a>HAL_TIM_Base_Start_IT</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, stm32f0xx_hal_tim.o(i.HAL_TIM_Base_Start_IT))
 <BR><BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -784,14 +784,14 @@ Global Symbols
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pow
 </UL>
 
-<P><STRONG><a name="[1f]"></a>main</STRONG> (Thumb, 144 bytes, Stack size 0 bytes, main.o(i.main))
+<P><STRONG><a name="[1f]"></a>main</STRONG> (Thumb, 154 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 304<LI>Call Chain = main &rArr; neko_led_test &rArr; pow &rArr; __kernel_poly &rArr; __aeabi_dmul &rArr; _double_epilogue &rArr; __aeabi_llsl
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_PWM_Start
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_TIM_Base_Start_IT
 <LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Init
 <LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
-<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_led_test
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_blinkTwiceAnimation
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_blinkOnceAnimation
@@ -835,10 +835,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7c]"></a>neko_servo_setDuty</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, main.o(i.neko_servo_setDuty))
-<BR><BR>[Called By]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
+<BR><BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;neko_waveAnimation
 </UL>
 
-<P><STRONG><a name="[78]"></a>neko_waveAnimation</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, main.o(i.neko_waveAnimation))
+<P><STRONG><a name="[77]"></a>neko_waveAnimation</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, main.o(i.neko_waveAnimation))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = neko_waveAnimation &rArr; HAL_Delay
 </UL>
 <BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin

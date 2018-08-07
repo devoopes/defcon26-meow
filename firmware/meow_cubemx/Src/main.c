@@ -138,7 +138,7 @@ int main(void)
 										|GPIO_PIN_6|GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9, GPIO_PIN_SET); //turn off all leds
 
 	HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-
+	neko_waveAnimation();
 	TIM_HandleTypeDef    TimHandle;
 	
 	// this was the magic to get the timer started + enable the interrupt
@@ -158,7 +158,7 @@ int main(void)
 		
 		if(ledFlag)
 		{
-			if(seconds % 30 == 0)
+			if(seconds % 60 == 0)
 			{
 				neko_waveAnimation();
 			}
@@ -498,9 +498,9 @@ void neko_waveAnimation(void)
 	HAL_GPIO_WritePin(GPIOB, eyesStars, GPIO_PIN_RESET);
 	for(int i = 0; i<3; i++)
 	{
-		neko_servo_setDuty(10);
+		neko_servo_setDuty(180);
 		HAL_Delay(400);
-		neko_servo_setDuty(20);
+		neko_servo_setDuty(190);
 		HAL_Delay(400);
 	}
 }
