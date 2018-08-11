@@ -29,7 +29,7 @@ You can find all the Eagle files in the eagle directory:
 If you would like to make your own, the bill of materials is here:
 
 On OSHpark
-https://oshpark.com/shared_projects/R43Z2nUk
+https://oshpark.com/shared_projects/X3Hxcson
 
 ### ADDON
 @xmurriel
