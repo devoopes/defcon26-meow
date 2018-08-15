@@ -3,8 +3,10 @@
 ### Maneki-neko
 Also know as Lucky Cat or Beckoning Cat. See more lore: https://en.wikipedia.org/wiki/Maneki-neko \
 
+Follow us on Twitter for updates! https://twitter.com/ManekiNekoDC
+
 ### Concept:
-To build a badge that incorporated 3D printed parts and movement.
+To build a badge that incorporated 3D printed parts and movement. \
 
 ### Art Design:
 First real iteration of the design.
@@ -33,3 +35,9 @@ https://oshpark.com/shared_projects/R43Z2nUk
 
 ### ADDON
 @xmurriel
+
+
+### News
+
+https://www.engadget.com/2018/08/15/this-cute-def-con-badge-beckons-you-to-hack-it/ \
+https://hackaday.com/2018/08/14/all-the-badges-of-def-con-26-vol-1/
