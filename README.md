@@ -32,8 +32,8 @@ https://github.com/SeanLeftBelow/defcon26-meow/tree/master/pcb/eagle
 ### BOM:
 If you would like to make your own, the bill of materials is here:   https://github.com/SeanLeftBelow/defcon26-meow/blob/master/pcb/eagle/dc26_maneki-neko_badge_page01_20180626.txt
 
-On OSHpark  
-https://oshpark.com/shared_projects/R43Z2nUk
+On OSHpark
+https://oshpark.com/shared_projects/X3Hxcson
 
 ### SAO
 @xmurriel
