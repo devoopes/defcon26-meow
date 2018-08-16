@@ -1,0 +1,20 @@
+cost reduction study
+
+=====
+
+no-populations only, no PCB design change
+
+refdes	cost@50		p/n					mfg				link
+
+sw1		0.1462		PTS645SM43SMTR92	c&k				https://www.digikey.com/product-detail/en/c-k/PTS645SM43SMTR92-LFS/CKN9112CT-ND/1146934
+h1		0.7280		20021121-00010T4LF	amphenol fci	https://www.digikey.com/products/en?keywords=20021121-00010T4LF
+u3		1.0010		NPTC042KFMS-RC		sullins			https://www.digikey.com/products/en?keywords=NPTC042KFMS-RC
+u4		0.2368		MIC2005A-1YM5-TR	microchip		https://www.digikey.com/product-detail/en/microchip-technology/MIC2005A-1YM5-TR/576-3462-1-ND/2062462
+
+total	2.1120
+
+=====
+
+cost reduction with minimal pcb design change
+
+refdes	cost@50		p/n					mfg				notes							link
