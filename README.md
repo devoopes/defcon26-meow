@@ -1,6 +1,7 @@
 # DEFCON 26 - Maneki-neko Badge
 
 <img src="https://s.aolcdn.com/hss/storage/midas/ebe9d6d81b8137bad3f8d598eb911a2c/206596447/nekobadge-ed.gif" />  
+
 photo by [Roberto Baldwin](https://twitter.com/@strngwys)  
 
 
