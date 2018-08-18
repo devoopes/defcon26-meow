@@ -1,13 +1,11 @@
 # Overview
-This folder contains the in-progress files for a Maneki-Neko "Shitty Add-On" as per the [Shitty Add-On Standard](https://hackaday.com/2018/06/21/this-is-the-year-conference-badges-get-their-own-badges/).
+This folder contains the in-progress files for a Maneki-Neko "Simple* Add-On" as per the [Simple Add-On Standard](https://hackaday.com/2018/06/21/this-is-the-year-conference-badges-get-their-own-badges/).
+
+**Note** Documentation is still in progress
 
 BIG Thank You's go to [Contextual Electronics](https://www.youtube.com/channel/UCkJRycUz2CylxpiP-zMePow) for the YouTube Getting to Blinky Series.
 
-https://medium.com/@urish/a-practical-guide-to-designing-pcb-art-b5aa22926a5c
-
-These were the two most useful tutorials that I referred to while going through the process. If you have the opportunity to read or watch through the entire thing before starting, I highly recommend it as this gives you a fair amount of context.
-
-NOTE: This is in-progress, so some steps may need revision or may be low on details.
+This was the most useful tutorial that I referred to while going through the process. If you have the opportunity to read or watch through the entire thing before starting, I highly recommend it as this gives you a fair amount of context.
 
 # Making the Add-On!
 
@@ -70,8 +68,13 @@ There are many ways to do this. You can:
 - Import to .... F.Cu layer?
 
 NOTES:
-The program assumes arbitrary input resolution of 300ppi, so a 300 by 300 image will give a 1" by 1" logo on the board.
+- The program assumes arbitrary input resolution of 300ppi, so a 300 by 300 image will give a 1" by 1" logo on the board.
+- According to Best Practices, minimize the number of right angles as you layout the tracks/traces between components on your board.
 
 Want to learn more about PCB Layout and solder mask?
 https://learn.sparkfun.com/tutorials/pcb-basics/composition
 https://learn.sparkfun.com/tutorials/beginners-guide-to-kicad/editing-a-pcb-layout
+
+
+Other Resources and Links:
+https://medium.com/@urish/a-practical-guide-to-designing-pcb-art-b5aa22926a5c
