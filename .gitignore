@@ -9,6 +9,9 @@
 -bak
 *.bck
 *.dcm
+.~lock.*
+*.o
+*.crf
 
 # directories
 
