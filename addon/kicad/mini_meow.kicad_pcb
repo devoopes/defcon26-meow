@@ -14,17 +14,17 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal hide)
+    (0 F.Cu signal)
     (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user)
-    (37 F.SilkS user hide)
-    (38 B.Mask user hide)
-    (39 F.Mask user hide)
-    (40 Dwgs.User user hide)
+    (37 F.SilkS user)
+    (38 B.Mask user)
+    (39 F.Mask user)
+    (40 Dwgs.User user)
     (41 Cmts.User user)
     (42 Eco1.User user)
     (43 Eco2.User user)
@@ -308,11 +308,11 @@
   )
 
   (module mini_meow:mini_meow_silk_lg (layer F.Cu) (tedit 0) (tstamp 5B567F02)
-    (at 152.9715 89.916 90)
-    (fp_text reference G*** (at 0 0 90) (layer F.SilkS) hide
+    (at 152.146 88.646)
+    (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
       (effects (font (thickness 0.3)))
     )
-    (fp_text value LOGO (at 0.75 0 90) (layer F.SilkS) hide
+    (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
       (effects (font (thickness 0.3)))
     )
     (fp_poly (pts (xy -15.573505 -27.856816) (xy -15.274617 -27.773643) (xy -15.122651 -27.711863) (xy -15.034663 -27.669366)
@@ -2092,7 +2092,7 @@
   (gr_line (start 132.607035 124.095547) (end 132.41897 124.01002) (layer Edge.Cuts) (width 0.1))
 
   (segment (start 148.971 80.772) (end 148.971 80.772) (width 0.381) (layer B.Cu) (net 1))
-  (segment (start 156.464 80.772) (end 148.971 80.772) (width 0.381) (layer B.Cu) (net 1) (status 400000))
+  (segment (start 156.464 80.772) (end 148.971 80.772) (width 0.381) (layer B.Cu) (net 1))
   (segment (start 142.746876 86.996124) (end 148.971 80.772) (width 0.381) (layer B.Cu) (net 1) (tstamp 5B776FBC))
   (segment (start 143.3195 112.8395) (end 139.319 112.8395) (width 0.381) (layer B.Cu) (net 1))
   (segment (start 142.6845 94.6785) (end 142.746876 86.996124) (width 0.381) (layer B.Cu) (net 1) (tstamp 5B7769F2))
