@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name meow)(type KiCad)(uri "$(KIPRJMOD)/meow.pretty")(options "")(descr ""))
-)
