@@ -1,9 +1,11 @@
 # DEFCON 26 - Maneki-neko Badge
 
 <img src="https://s.aolcdn.com/hss/storage/midas/ebe9d6d81b8137bad3f8d598eb911a2c/206596447/nekobadge-ed.gif" />  
-_photo by [Roberto Baldwin](https://twitter.com/@strngwys)_
+photo by [Roberto Baldwin](https://twitter.com/@strngwys)  
+
 
 Follow the Twitter for updates [@ManekiNekoDC](https://twitter.com/ManekiNekoDC)  
+
 
 We are currently considering a second run. If you would like one please leave your email in the survey: https://t.co/keoxwR8fyg  
 
