@@ -1,43 +1,40 @@
 # DEFCON 26 - Maneki-neko Badge
 
-### Maneki-neko
-Also know as Lucky Cat or Beckoning Cat. See more lore: https://en.wikipedia.org/wiki/Maneki-neko  
+<img src="https://s.aolcdn.com/hss/storage/midas/ebe9d6d81b8137bad3f8d598eb911a2c/206596447/nekobadge-ed.gif" />  
 
-Follow us on Twitter for updates!  
-https://twitter.com/ManekiNekoDC  
+photo by [Roberto Baldwin](https://twitter.com/@strngwys)  
 
-### Concept:
-To build a badge that incorporated 3D printed parts and movement.  
+
+Follow the Twitter for updates [@ManekiNekoDC](https://twitter.com/ManekiNekoDC)  
+
+
+We are currently considering a second run. If you would like one please leave your email in the survey: https://t.co/keoxwR8fyg  
+
+We went to DEF CON 26 and launched an unofficial DEF CON badge. We wanted to be able to create something different and unique to some of the other designs out there. The badge is controlled by an STM32 that drives the servo and dual 16 segment LEDS on the front. We attached a 3d printed arm to the servo. All the files are source code are Open Source and in this repo. You are welcome to make one yourself via OSHpark or JLC PCB. Gerber files are located in the repo.  
 
 ### Art Design:
-First real iteration of the design.  
-![alt text](https://github.com/SeanLeftBelow/defcon26-meow/blob/master/art/rough-draft02.jpg "Rough Draft 2")
+Our art was done by Jeff Chang.
+http://www.jeffchangart.com/  
+Twitter [@jeffchangart](https://twitter.com/jeffchangart)  
+Instagram [@jeffchangart](https://instagram.com/jeffchangart)  
 
-Main Concept Art  
-![alt text](https://github.com/SeanLeftBelow/defcon26-meow/blob/master/art/meow_v3_offwhite.svg "Main Concept Art")
+All the drafts, and formats of the art can be found in the /art/ directory.
 
-Jeff Changs design from the concept art.  
-http://www.jeffchangart.com/ @jeffchangart on Twitter and Instagram
-
-After getting it back from the fab shop:  
-![alt text](https://github.com/SeanLeftBelow/defcon26-meow/blob/master/photos/fab.jpg "Back from fab")
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/art/meow_v4_nogray.png" />
 
 ### Electronics
 
 First done with KiCAD but abandoned after more experienced help was provided. <3
-You can find all the Eagle files in the eagle directory:  
-https://github.com/SeanLeftBelow/defcon26-meow/tree/master/pcb/eagle
+You can find all the Eagle files in the [eagle directory](https://github.com/SeanLeftBelow/defcon26-meow/tree/master/pcb/eagle).
 
+First look at the boards from the fab house.  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/photos/fab.jpg" />
 
-### BOM:
-If you would like to make your own, the bill of materials is here:   https://github.com/SeanLeftBelow/defcon26-meow/blob/master/pcb/eagle/dc26_maneki-neko_badge_page01_20180626.txt
+Board is on [OSHpark](https://oshpark.com/shared_projects/X3Hxcson)
 
-On OSHpark
-https://oshpark.com/shared_projects/X3Hxcson
+### SAO (Special Addons/ Shitty Addons)
 
-### SAO
-@xmurriel
-
+Overall design is a copy of the main badge. See writeup [here](https://github.com/SeanLeftBelow/defcon26-meow/tree/master/addon)
 
 ### In The News
 
