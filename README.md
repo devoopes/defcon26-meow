@@ -21,7 +21,7 @@ All the drafts, and formats of the art can be found in the /art/ directory.
 First done with KiCAD but abandoned after more experienced help was provided. <3
 You can find all the Eagle files in the [eagle directory](https://github.com/SeanLeftBelow/defcon26-meow/tree/master/pcb/eagle).
 
-First look at the boards:
+First look at the boards from the fab house.  
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/photos/fab.jpg" />
 
 Board is on [OSHpark](https://oshpark.com/shared_projects/X3Hxcson)
