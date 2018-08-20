@@ -23,7 +23,7 @@ All the drafts, and formats of the art can be found in the /art/ directory.
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/art/meow_v4_nogray.png" />
 
 Lanyards were done by https://customlanyards4all.com
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/art/lanyards.jpg" />
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/art/lanyard.jpg" />
 
 ### Electronics
 
