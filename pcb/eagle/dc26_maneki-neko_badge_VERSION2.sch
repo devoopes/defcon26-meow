@@ -8984,7 +8984,7 @@ FEMALE SMT</text>
 <part name="SUPPLY21" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SW1" library="PTS645SM43SMTR92" deviceset="PTS645SM43SMTR92" device=""/>
 <part name="S1" library="JS202011SCQN" deviceset="JS202011SCQN" device=""/>
-<part name="U$2" library="battery_pads" deviceset="BATTPADS-SMT" device=""/>
+<part name="H4" library="battery_pads" deviceset="BATTPADS-SMT" device=""/>
 <part name="S2" library="JS202011SCQN" deviceset="JS202011SCQN" device=""/>
 <part name="R30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k/5%"/>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
@@ -8992,8 +8992,8 @@ FEMALE SMT</text>
 <sheets>
 <sheet>
 <plain>
-<text x="167.64" y="119.38" size="5.08" layer="97">RIGHT EYE</text>
-<text x="60.96" y="119.38" size="5.08" layer="97">LEFT EYE</text>
+<text x="167.64" y="116.84" size="5.08" layer="97">RIGHT EYE</text>
+<text x="60.96" y="116.84" size="5.08" layer="97">LEFT EYE</text>
 <text x="-35.56" y="195.58" size="1.778" layer="97">(3.3V - 2V) / 270 ohms = 5 mA</text>
 <text x="154.94" y="43.18" size="5.08" layer="97">SERVO DRIVE</text>
 <text x="-30.48" y="35.56" size="5.08" layer="97">ESP8266</text>
@@ -9107,7 +9107,7 @@ REGULATOR</text>
 <instance part="SUPPLY21" gate="GND" x="-226.06" y="119.38"/>
 <instance part="SW1" gate="G$1" x="-210.82" y="127"/>
 <instance part="S1" gate="G$1" x="-177.8" y="241.3"/>
-<instance part="U$2" gate="G$1" x="-208.28" y="226.06" rot="MR0"/>
+<instance part="H4" gate="G$1" x="-208.28" y="226.06" rot="MR0"/>
 <instance part="S2" gate="G$1" x="48.26" y="83.82" smashed="yes">
 <attribute name="NAME" x="58.3908" y="81.28486875" size="1.272440625" layer="95"/>
 <attribute name="VALUE" x="58.3798" y="78.72658125" size="1.273359375" layer="96"/>
@@ -9121,7 +9121,7 @@ REGULATOR</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
-<pinref part="U$2" gate="G$1" pin="2"/>
+<pinref part="H4" gate="G$1" pin="2"/>
 <wire x1="-203.2" y1="223.52" x2="-165.1" y2="223.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -9895,13 +9895,6 @@ REGULATOR</text>
 <pinref part="H1" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="LEFT-EYE-!FAULT" class="0">
-<segment>
-<pinref part="U1" gate="MCU" pin="PA10"/>
-<wire x1="-121.92" y1="121.92" x2="-86.36" y2="121.92" width="0.1524" layer="91"/>
-<label x="-111.76" y="121.92" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="!RESET" class="0">
 <segment>
 <pinref part="U1" gate="MCU" pin="NRST"/>
@@ -9912,27 +9905,6 @@ REGULATOR</text>
 <wire x1="-114.3" y1="63.5" x2="-129.54" y2="63.5" width="0.1524" layer="91"/>
 <label x="-119.38" y="63.5" size="1.778" layer="95" rot="MR0"/>
 <pinref part="H1" gate="G$1" pin="9"/>
-</segment>
-</net>
-<net name="ESP-EN" class="0">
-<segment>
-<pinref part="U1" gate="MCU" pin="PA9"/>
-<wire x1="-86.36" y1="119.38" x2="-121.92" y2="119.38" width="0.1524" layer="91"/>
-<label x="-111.76" y="119.38" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="ESP-!FAULT" class="0">
-<segment>
-<pinref part="U1" gate="MCU" pin="PA12"/>
-<wire x1="-121.92" y1="127" x2="-86.36" y2="127" width="0.1524" layer="91"/>
-<label x="-111.76" y="127" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="RIGHT-EYE-!FAULT" class="0">
-<segment>
-<pinref part="U1" gate="MCU" pin="PA11"/>
-<wire x1="-86.36" y1="124.46" x2="-121.92" y2="124.46" width="0.1524" layer="91"/>
-<label x="-111.76" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -10130,7 +10102,7 @@ REGULATOR</text>
 </net>
 <net name="VBATIN" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="1"/>
+<pinref part="H4" gate="G$1" pin="1"/>
 <wire x1="-203.2" y1="226.06" x2="-177.8" y2="226.06" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="2"/>
 <wire x1="-177.8" y1="226.06" x2="-177.8" y2="228.6" width="0.1524" layer="91"/>
