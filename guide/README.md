@@ -36,50 +36,50 @@ Leaded Solder
 - (*U1*	MCU 32-bit STM32F ARM Cortex)
 _Note: Liberally apply flux when soldering the MCU. If you have not soldered an MCU before please watch a few techniques on YouTube._  
 Position the PCB so the head is up and feet down. The MCU is in the top right and the position of the dot is lower left.
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/u1.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/u1.JPG" />  
 
 - (*R1,R3*	0 OHM)
 _Note: R2 and R4 are intentionally left blank_
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r1-r3.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r1-r3.JPG" />  
 
 - (*R21,R22,R26,R27,R28,R30*	10K OHM)
 _Note: R23, R24, R29 are intentionally left blank_
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r21-r30.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r21-r30.JPG" />  
 
 - (*C1,C2*	10µF ±10% 16V)
 _Note: C3 is intentionally left blank_
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/c1-c2.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/c1-c2.JPG" />  
 
 - (*R25*	1K OHM)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r25.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r25.JPG" />  
 
 - (*C4,C5,C6,C7,C8,C9,C10,C11,C12*	1uF 16V)
 _Note: C4, C5, C8 are intentionally left blank_
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/c4-c12.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/c4-c12.JPG" />  
 
 - (*H1*	2 Row 10 Position (5x2) 1.27 mm Unshrouded Surface Mount Male Pin Header)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/h1.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/h1.JPG" />  
 
 - (*R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20*	270 OHM)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r4-r20.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r4-r20.JPG" />  
 
 - (*L1*	4.7µH Shielded Multilayer Inductor 1.1A)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/l1.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/l1.JPG" />  
 
 - (*U2*	IC REG BCK 3.3V 0.8A SYNC)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/u2.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/u2.JPG" />  
 
 - (*T1*	2.5V Drive Nch Mosfet)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/t1.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/t1.JPG" />  
 
 - (*S1* Switch)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/s1.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/s1.JPG" />  
 
 
 These parts can only be soldered last.
 
 - (*H3*	Header 4 Position Dual Row)
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/s1.jpg" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/s1.JPG" />  
 
 - (*D1,D2*	16 Segment Display; red)
 *** ORIENTATION ***
