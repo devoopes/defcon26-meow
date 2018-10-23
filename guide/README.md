@@ -119,7 +119,10 @@ If you would like to attach a programmer with out having the fitting for the sma
 | RST  | **9** | **10** | | |
 
 
+
+
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/flash.JPG" style="width: 50%; height: 50%" />
+
 _Note: Please note the orientation of the ribbon cable._
 Once Keil is setup, put in batteries, attach the programmer cable and turn the switch to the right. Then click the `LOAD` button in Keil. A prompt will appear with a ToS that you have to accept.
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/keil.png" style="width: 50%; height: 50%" />
