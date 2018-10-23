@@ -95,13 +95,13 @@ _Note: The orientation of the dot is always bottom right_
 _Note: from top to bottom Orange, Red, Brown._
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/servo.JPG" style="width: 50%; height: 50%" />  
 
-- Once everything is soldered. Attach the Battery back, then the servo with double sided tape. The servo will fit perfectly alongside the battery pack.
+- Once everything is soldered, attach the battery pack and servo with double sided foam tape. The servo will fit perfectly alongside the battery pack.
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/complete.JPG" style="width: 50%; height: 50%" />  
 
 ## Keil Setup:
 
-On a windows computer download and install this: http://www2.keil.com/stmicroelectronics-stm32/mdk \
-_(in the case this becomes unavailable or the link changes. Google for the ARM Keil tool for MDK for STM32L0 and STM32F0)_ \
+On a windows computer download and install [Keil](http://www2.keil.com/stmicroelectronics-stm32/mdk) \
+_Note: in the case this becomes unavailable or the link changes. Google for the `ARM Keil tool for MDK for STM32L0 and STM32F0`_ \
 On the same computer clone this repo and open the firmware directory in Keil.
 
 
@@ -118,7 +118,10 @@ If you would like to attach a programmer with out having the fitting for the sma
 |      | **7** | **8** |     |
 | RST  | **9** | **10** | | |
 
-To flash click the `LOAD` button in Keil. A prompt will appear with a ToS that you can click through and if everything is soldered correctly and its powered it will begin to flash. Once its done the servo will start moving and the eyes will flash.
 
-
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/flash.JPG" style="width: 50%; height: 50%" />
+_Note: Please note the orientation of the ribbon cable._
+Once Keil is setup, put in batteries, attach the programmer cable and turn the switch to the right. Then click the `LOAD` button in Keil. A prompt will appear with a ToS that you have to accept.
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/keil.png" style="width: 50%; height: 50%" />
+
+If everything is soldered correctly and its powered it will begin to flash. Once its programmed the servo will start moving and the eyes will flash.
