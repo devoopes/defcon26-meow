@@ -25,15 +25,15 @@ Lanyards were done by https://customlanyards4all.com
 
 ### Meowtronics
 
-First done with KiCAD but abandoned after more experienced help was provided. <3
+First done with KiCAD but abandoned after more experienced help was provided. <3 \
 You can find all the Eagle files in the [eagle directory](https://github.com/SeanLeftBelow/defcon26-meow/tree/master/pcb/eagle).
-
-First look at the boards from the fab house.  
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/photos/fab.jpg" />
 
 Board is on [OSHpark](https://oshpark.com/shared_projects/X3Hxcson)
 
 Guide is [here](https://github.com/SeanLeftBelow/defcon26-meow/tree/master/guide)
+
+First look at the boards from the fab house.  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/photos/fab.jpg" />
 
 ### SAO (Special Addons/ Shitty Addons)
 
@@ -41,6 +41,6 @@ Overall design is a copy of the main badge. See writeup [here](https://github.co
 
 ### In The Mews
 
-[Engadget: This cute Def Con badge beckons you to hack it](https://www.engadget.com/2018/08/15/this-cute-def-con-badge-beckons-you-to-hack-it/  )
-[Hackaday: ALL THE BADGES OF DEF CON 26 (VOL 1)](https://hackaday.com/2018/08/14/all-the-badges-of-def-con-26-vol-1/)
-[BadgeLife - A Hackaday Documentary](https://www.youtube.com/watch?v=G2fHKRONc6U)
+[Engadget: This cute Def Con badge beckons you to hack  it](https://www.engadget.com/2018/08/15/this-cute-def-con-badge-beckons-you-to-hack-it/  ) \
+[Hackaday: ALL THE BADGES OF DEF CON 26 (VOL 1)](https://hackaday.com/2018/08/14/all-the-badges-of-def-con-26-vol-1/) \
+[BadgeLife - A Hackaday Documentary](https://www.youtube.com/watch?v=G2fHKRONc6U) \
