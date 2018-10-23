@@ -1,35 +1,33 @@
 # Maneki-neko Badge Assembly Guide
 
-A few have been asking for the ability to build their own from parts. This is a guide to do so.
+A few have been asking for the ability to build their own from parts. This is a guide to do so. \
 
 # DISCLAIMER:
-This project is not for the soldering beginner. All the parts are [0603](https://en.wikipedia.org/wiki/Surface-mount_technology#Packages) which are about the size of a grain of sand.
+This project is not for the soldering beginner. All the parts are [0603](https://en.wikipedia.org/wiki/Surface-mount_technology#Packages) which are about the size of a grain of sand. \
 
+If you wanted to order parts yourself, [Mouser](https://www.mouser.com/) and [Digi-Key](https://www.digikey.com/) are my main resources for parts. \
 
-If you wanted to order parts yourself, [Mouser](https://www.mouser.com/) and [Digi-Key](https://www.digikey.com/) are my main resources for parts.
+The Bill of Materials (BOM) can be found [here](https://github.com/SeanLeftBelow/defcon26-meow/blob/master/pcb/dc26_maneki-neko_badge_fab_20180627/dc26_maneki-neko_badge_page01_20180627_commas.csv). Sometimes manufactures discontinue parts or they simply become unavailable you will have to find alt parts. In my recent order I put together a spreadsheet of purchasable parts and some alts I chose. Speedsheet is [here](https://docs.google.com/spreadsheets/d/13uPpL5BdiQRk4fQEPqo-OPYJxFrPVoP4QA09e1TaAkI/edit?usp=sharing) \
 
-
-The Bill of Materials (BOM) can be found [here](https://github.com/SeanLeftBelow/defcon26-meow/blob/master/pcb/dc26_maneki-neko_badge_fab_20180627/dc26_maneki-neko_badge_page01_20180627_commas.csv). Sometimes manufactures discontinue parts or they simply become unavailable you will have to find alt parts. In my recent order I put together a spreadsheet of purchasable parts and some alts I chose. Speedsheet is [here](https://docs.google.com/spreadsheets/d/13uPpL5BdiQRk4fQEPqo-OPYJxFrPVoP4QA09e1TaAkI/edit?usp=sharing)
-
-
-If parts become unavailable you can create a PR or DM me on twitter [@ManekiNekoDC](https://twitter.com/ManekiNekoDC)
+If parts become unavailable you can create a PR or DM me on twitter [@ManekiNekoDC](https://twitter.com/ManekiNekoDC) \
 
 ## Important Notes about the BOM
-- U4,U5,U6, IC PWR SWITCH ACTIVE HI
-This part was removed on the second rev of the board and has no place on the board.
-- H3	Header 4 Position Dual Row
-This part was removed in ver 2 but the pads are still there.
-- R30, 10K OHM
-This part is only on ver 2.
+- U4,U5,U6, IC PWR SWITCH ACTIVE HI \
+    This part was removed on the second rev of the board and has no place on the board.
+- H3	Header 4 Position Dual Row \
+    This part was removed in ver 2 but the pads are still there.
+- R30, 10K OHM \
+    This part is only on ver 2.
 
 ## Required tools
-Soldering Iron with a fine tip \
-Leaded Solder \
-[Flux](https://www.amazon.com/Tools-Harware-8310000186-Kester-Soldering/dp/B00YL1D3US/) (The higher quality the better. The flux pen will work.) \
+Soldering Iron with a fine tip (Something you are comfortable working with 0603's with.)\
+Leaded/Unleaded Solder \
+[Flux](https://www.amazon.com/Tools-Harware-8310000186-Kester-Soldering/dp/B00YL1D3US/) \
 [Solder Wick](https://www.amazon.com/NTE-Electronics-SW02-10-No-Clean-Blue-098/dp/B0195UVWJ8/) \
-[Tweezers](https://www.amazon.com/gp/product/B0009K3IAK/) (Get good ones. Bad ones are magnetic.) \
+[Tweezers](https://www.amazon.com/gp/product/B0009K3IAK/) (Get good ones. Bad ones can be magnetic.) \
 [Magnified Glass](https://www.amazon.com/Spectrum-Natural-Daylight-Magnifier-Mounting/dp/B00D5WM8EG/) or [Microscope](https://www.amazon.com/gp/product/B005C75IVM/) \
-[Programmer]()
+[Programmer](https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/) [Amazon](https://www.amazon.com/Segger-J-Link-EDU-mini-Debugger/dp/B0758XRMTF) [Adafruit](https://www.adafruit.com/product/3571) \
+I used a Segger, but you can get cheaper AVR programmers off Ali and Amazon.
 
 
 ## Soldering the board.
@@ -73,17 +71,15 @@ _Note: C4, C5, C8 are not on rev 2_
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/t1.JPG" style="width: 50%; height: 50%" />  
 
 - (**S1** Switch) \
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/s1.JPG" style="width: 50%; height: 50%" />  
-#TODO: Update photo with header.
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/switch.JPG" style="width: 50%; height: 50%" />  
 
 # These parts can only be soldered last.
 
 - (**H3**	Header 4 Position Dual Row) \
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/header.JPG" style="width: 50%; height: 50%" />  
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/h1.JPG" style="width: 50%; height: 50%" />  
 
 - (**D1,D2** 16 Segment Display; red) \
-#TODO: Orientation of the unit.
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/16seg.JPG" style="width: 50%; height: 50%" />  
+#TODO: <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/16seg.JPG" style="width: 50%; height: 50%" />  
 
 - (Battery Pack) \
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/battery.JPG" style="width: 50%; height: 50%" />  
@@ -98,12 +94,22 @@ _Note: from top to bottom Orange, Red, Brown._
 On a windows computer download and install this: http://www2.keil.com/stmicroelectronics-stm32/mdk \
 _(in the case this becomes unavailable or the link changes. Google for the ARM Keil tool for MDK for STM32L0 and STM32F0)_
 
-On the same computer clone this repo and open the firmware directory in Keil.
-<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/keil.JPG" style="width: 50%; height: 50%" />
+On the same computer clone this repo and open the firmware directory in Keil. \
 
 
 ## Programming the Board.
 
 Once you have finished soldering and put in batteries. Attach the programmer and switch the power button. \
 
-To flash click this button in Keil. A prompt will appear with a disclaimer that you can click through and if everything is soldered correctly and its powered it will begin to flash. Once it done the servo will start moving and the eyes will flash. <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/servo.JPG" style="width: 50%; height: 50%" />  
+If you would like to attach a programmer with out having the fitting for the small ribbon, please see the following: \
+
+| | | | |
+| --- | :---: | :---: | --- |
+| v3.3 | **1** | **2** | DLO |
+| GND  | **3** | **4** | CLK |
+| GND  | **5** | **6** |     |
+|      | **7** | **8** |     |
+| RST  | **9** | **10** | | |
+
+To flash click the `LOAD` button in Keil. A prompt will appear with a ToS that you can click through and if everything is soldered correctly and its powered it will begin to flash. Once its done the servo will start moving and the eyes will flash. \
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/keil.png" style="width: 50%; height: 50%" />
