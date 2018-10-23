@@ -48,40 +48,40 @@ _Note: R23, R24, R29 are intentionally left blank_
 _Note: C3 is intentionally left blank_
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/c1-c2.JPG" style="width: 50%; height: 50%" />  
 
-- (**R25**	1K OHM) \
+- (**R25**	1K OHM)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r25.JPG" style="width: 50%; height: 50%" />  
 
 - (**C4,C5,C6,C7,C8,C9,C10,C11,C12**	1uF 16V) \
 _Note: C4, C5, C8 are not on rev 2_
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/c4-c12.JPG" style="width: 50%; height: 50%" />  
 
-- (**H1**	2 Row 10 Position (5x2) 1.27 mm Unshrouded Surface Mount Male Pin Header) \
+- (**H1**	2 Row 10 Position (5x2) 1.27 mm Unshrouded Surface Mount Male Pin Header)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/h1.JPG" style="width: 50%; height: 50%" />  
 
-- (**R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20**	270 OHM) \
+- (**R4,R5,R6,R7,R8,R9,R10,R11,R12,R13,R14,R15,R16,R17,R18,R19,R20**	270 OHM)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/r4-r20.JPG" style="width: 50%; height: 50%" />  
 
-- (**L1**	4.7µH Shielded Multilayer Inductor 1.1A) \
+- (**L1**	4.7µH Shielded Multilayer Inductor 1.1A)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/l1.JPG" style="width: 50%; height: 50%" />  
 
-- (**U2**	IC REG BCK 3.3V 0.8A SYNC) \
+- (**U2**	IC REG BCK 3.3V 0.8A SYNC)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/u2.JPG" style="width: 50%; height: 50%" />  
 
-- (**T1**	2.5V Drive Nch Mosfet) \
+- (**T1**	2.5V Drive Nch Mosfet)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/t1.JPG" style="width: 50%; height: 50%" />  
 
-- (**S1** Switch) \
+- (**S1** Switch)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/switch.JPG" style="width: 50%; height: 50%" />  
 
 # These parts can only be soldered last.
 
-- (**H3**	Header 4 Position Dual Row) \
+- (**H3**	Header 4 Position Dual Row)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/h1.JPG" style="width: 50%; height: 50%" />  
 
-- (**D1,D2** 16 Segment Display; red) \
-#TODO: <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/16seg.JPG" style="width: 50%; height: 50%" />  
+- (**D1,D2** 16 Segment Display; red)
+<img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/16seg.JPG" style="width: 50%; height: 50%" />  
 
-- (Battery Pack) \
+- (Battery Pack)
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/battery.JPG" style="width: 50%; height: 50%" />  
 
 - (Servo) \
