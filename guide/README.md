@@ -102,12 +102,11 @@ _Note: from top to bottom Orange, Red, Brown._
 
 On a windows computer download and install [Keil](http://www2.keil.com/stmicroelectronics-stm32/mdk) \
 _Note: in the case this becomes unavailable or the link changes. Google for the `ARM Keil tool for MDK for STM32L0 and STM32F0`_ \
-On the same computer clone this repo and open the firmware directory in Keil.
+On the same computer clone this repo and open the firmware directory of the repo in Keil.
 
 
 ## Programming the Board.
 
-Once you have finished soldering and put in batteries. Attach the programmer and switch the power button. \
 If you would like to attach a programmer with out having the fitting for the small ribbon the full schematic is available in eagle.
 
 | | | | |
@@ -123,8 +122,8 @@ If you would like to attach a programmer with out having the fitting for the sma
 
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/flash.JPG" style="width: 50%; height: 50%" />
 
-_Note: Please note the orientation of the ribbon cable._
+_Note: Please note the orientation of the ribbon cable._ \
 Once Keil is setup, put in batteries, attach the programmer cable and turn the switch to the right. Then click the `LOAD` button in Keil. A prompt will appear with a ToS that you have to accept.
 <img src="https://github.com/SeanLeftBelow/defcon26-meow/blob/master/guide/img/keil.png" style="width: 50%; height: 50%" />
 
-If everything is soldered correctly and its powered it will begin to flash. Once its programmed the servo will start moving and the eyes will flash.
+If everything is soldered correctly and it's powered it will begin to flash. Once it's programmed the servo will start moving and the eyes will flash.
